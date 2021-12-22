@@ -105,7 +105,6 @@ h1 {
     height: 95%;
     overflow-x: clip;
     border: 0.6vw solid #3B3132;
-    border-radius: 5%;
 }
 .project-img {
     height: 100%;
@@ -310,5 +309,11 @@ h1 {
     }
     .footer-content {
         font-size: 3vw;
+    }
+    .nav-items {
+        font-size: 3.2vw;
+    }
+    .nav-items:hover {
+        font-size: 3.3vw;
     }
 }
