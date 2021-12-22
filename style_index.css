@@ -17,11 +17,10 @@ nav {
   background-color: #A7465C;
   display: flex;
   position: fixed;
-  justify-content: right;
-  width: 100%;
+  justify-content: flex-end;
+  width: 100vw;
   height: 13vh;
   top: 0px;
-  /* border: 1px solid black; */
   z-index: 9999;
 }
 .nav-items {
