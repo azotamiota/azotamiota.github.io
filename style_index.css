@@ -186,7 +186,7 @@ h1 {
     font-size: 1.5vw;
 }
 .contacts-tile:hover {
-    bottom: -12px;
+    bottom: -8px;
     transition: 0.5s;
 }
 #footer {
