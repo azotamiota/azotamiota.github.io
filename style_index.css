@@ -23,6 +23,11 @@ nav {
   top: 0px;
   z-index: 9999;
 }
+.blank {
+  background-color: #A37A65;
+  width: 100vw;
+  height: 13vh;
+}
 .nav-items {
     display: inline-flex;
     position: relative;
