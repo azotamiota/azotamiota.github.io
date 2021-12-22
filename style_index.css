@@ -37,10 +37,11 @@ nav {
     color: navajowhite;
 }
 .nav-items:hover {
+    font-size: 1.6vw;
     background-color: black;
-    font-size: 1.7rem;
     transition: 0.5s;
 }
+
 a:link {
     text-decoration: none;
     color: navajowhite;
@@ -206,6 +207,9 @@ h1 {
     .nav-items {
         font-size: 2.5vw;
     }
+    .nav-items:hover {
+        font-size: 2.7vw;
+    }
     .section-header {
         font-size: 5vw;
     }
@@ -231,6 +235,9 @@ h1 {
     }
     .nav-items {
         font-size: 2.6vw;
+    }
+    .nav-items:hover {
+        font-size: 2.7vw;
     }
     .section-header {
         font-size: 5.1vw;
@@ -268,6 +275,9 @@ h1 {
     }
     .nav-items {
         font-size: 4vw;
+    }
+    .nav-items:hover {
+        font-size: 4.1vw;
     }
     .section-header {
         font-size: 7vw;
