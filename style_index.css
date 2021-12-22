@@ -29,7 +29,7 @@ nav {
     position: relative;
     height: 100%;
     width: 13%;
-    right: 0;
+    right: 10vw;
     /* border: 1px solid blue; */
     align-items: center;
     justify-content: center;
@@ -38,7 +38,7 @@ nav {
 }
 .nav-items:hover {
     background-color: black;
-    font-size: 2rem;
+    font-size: 1.7rem;
     transition: 0.5s;
 }
 a:link {
@@ -64,24 +64,18 @@ a:link {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    /* border: 1px solid black; */
 }
 #projects-session {
     background-color: #A37A65;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     padding: 3rem 2rem;
-    /* height: 130vh; */
-    /* min-height: 100vh; */
 }
 .section-header {
     font-family: monospace;
     font-size: 3.2vw;
-    /* -webkit-text-stroke: 1px black; */
     text-align: center;
     margin: 2rem auto 3rem auto;
-    /* border: 1px solid black; */
     color: navajowhite;
 }
 h1 {
@@ -204,6 +198,22 @@ h1 {
     color: navajowhite;
     font-size: 1.1vw;
 }
+
+@media only screen and (max-width: 1024px){
+    .subtitle {
+        font-size: 3vw;
+    }
+    .nav-items {
+        font-size: 2.5vw;
+    }
+    .section-header {
+        font-size: 5vw;
+    }
+    h1 {
+        font-size: 5vw;
+    }
+}
+
 @media only screen and (max-width: 900px){
     #project-grid {
         display: grid;
@@ -215,6 +225,33 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 770px){
+    .subtitle {
+        font-size: 3.1vw;
+    }
+    .nav-items {
+        font-size: 2.6vw;
+    }
+    .section-header {
+        font-size: 5.1vw;
+    }
+    h1 {
+        font-size: 5.1vw;
+    }
+    .project-title {
+        font-size: 2.1vw;
+    }
+    .contacts-tile {
+        font-size: 2.1vw;
+    }
+    .show-all {
+        font-size: 2.1vw;
+    }
+    .footer-content {
+        font-size: 2vw;
+    }
+}
+
 @media only screen and (max-width: 600px){
     #project-grid {
         display: grid;
@@ -223,5 +260,46 @@ h1 {
         grid-gap: 3vw;
         max-width: 1280px;
         margin: 0 7vw;
+    }
+}
+@media only screen and (max-width: 430px){
+    .subtitle {
+        font-size: 5vw;
+    }
+    .nav-items {
+        font-size: 4vw;
+    }
+    .section-header {
+        font-size: 7vw;
+    }
+    h1 {
+        font-size: 7vw;
+    }
+    .project-title {
+        font-size: 4vw;
+    }
+    .contacts-tile {
+        font-size: 4vw;
+    }
+    .show-all {
+        font-size: 4vw;
+    }
+    .footer-content {
+        font-size: 3.8vw;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .project-title {
+        font-size: 3vw;
+    }
+    .contacts-tile {
+        font-size: 3vw;
+    }
+    .show-all {
+        font-size: 3vw;
+    }
+    .footer-content {
+        font-size: 3vw;
     }
 }
