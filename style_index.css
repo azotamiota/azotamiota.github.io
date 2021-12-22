@@ -101,11 +101,10 @@ h1 {
 }
 .project-tile {
     position: relative;
-    /* border: 1px solid blue; */
     height: 95%;
     overflow-x: clip;
     border: 0.6vw solid #3B3132;
-}
+}    
 .project-img {
     height: 100%;
     width: 100%;
