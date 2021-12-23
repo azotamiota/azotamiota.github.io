@@ -182,10 +182,8 @@ h1 {
     justify-content: space-evenly;
 }
 .contacts-tile {
-    /* border: 1px solid red; */
     position: relative;
     bottom: 0;
-    padding: 1rem;
     text-align: center;
     font-size: 1.5vw;
 }
