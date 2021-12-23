@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
@@ -74,7 +78,7 @@ a:link {
     background-color: #A37A65;
     display: flex;
     flex-direction: column;
-    padding: 3rem 2rem;
+    padding: 3vw 1vw;
 }
 .section-header {
     font-family: monospace;
@@ -97,26 +101,19 @@ h1 {
     padding-bottom: 0.4rem;
 }
 #project-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     grid-gap: 3vw;
-    max-width: 1280px;
-    margin: 0 7vw;
 }
 .project-tile {
     position: relative;
-    height: 95%;
-    overflow-x: clip;
-    border: 0.6vw solid #3B3132;
+    height: 20vw;
+    width: 29%;
+    box-shadow: inset 0px 0px 0px 1px #000;
 }    
-.project-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
 .project-title {
-    /* border: 1px solid black; */
     position: absolute;
     display: flex;
     bottom: 0px;
@@ -126,6 +123,7 @@ h1 {
     justify-content: center;
     background-color: #29625D;
     font-size: 1.2vw;
+    box-shadow: inset 0px 0px 0px 1px #000;
 }
 .project-title::before {
     content: '</';
@@ -154,10 +152,12 @@ h1 {
     padding: 1rem;
     background-color: #29625D;
     font-size: 1.5vw;
+    border: 1px solid black;
 }
 .next:hover {
     background-color: black;
     transition: 0.5s;
+    
 }
 .page-nav {
     margin: 2vw auto 0vw auto;
@@ -223,18 +223,11 @@ h1 {
     h1 {
         font-size: 5vw;
     }
-}
-
-@media only screen and (max-width: 900px){
-    #project-grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-        grid-gap: 3vw;
-        max-width: 1280px;
-        margin: 0 7vw;
+    .contacts-tile {
+        font-size: 2vw;
     }
 }
+
 
 @media only screen and (max-width: 770px){
     .subtitle {
@@ -252,30 +245,24 @@ h1 {
     h1 {
         font-size: 5.1vw;
     }
-    .project-title {
-        font-size: 2.1vw;
+    .project-tile {
+        width: 42%;
+        height: 40vw;
     }
-    .contacts-tile {
+    .project-title {
         font-size: 2.1vw;
     }
     .next {
         font-size: 2.1vw;
+    }
+    .contacts-tile {
+        font-size: 2.5vw;
     }
     .footer-content {
         font-size: 2vw;
     }
 }
 
-@media only screen and (max-width: 600px){
-    #project-grid {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        grid-gap: 3vw;
-        max-width: 1280px;
-        margin: 0 7vw;
-    }
-}
 @media only screen and (max-width: 430px){
     .subtitle {
         font-size: 5vw;
@@ -292,14 +279,18 @@ h1 {
     h1 {
         font-size: 7vw;
     }
-    .project-title {
-        font-size: 4vw;
+    .project-tile {
+        height: 60vw;
+        width: 70%;
     }
-    .contacts-tile {
+    .project-title {
         font-size: 4vw;
     }
     .next {
         font-size: 4vw;
+    }
+    .contacts-tile {
+        font-size: 3vw;
     }
     .footer-content {
         font-size: 3.8vw;
@@ -308,9 +299,6 @@ h1 {
 
 @media only screen and (max-width: 350px){
     .project-title {
-        font-size: 3vw;
-    }
-    .contacts-tile {
         font-size: 3vw;
     }
     .next {
@@ -324,5 +312,8 @@ h1 {
     }
     .nav-items:hover {
         font-size: 3.3vw;
+    }
+    .contacts-tile {
+        font-size: 4vw;
     }
 }
