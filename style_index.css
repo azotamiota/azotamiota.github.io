@@ -246,6 +246,9 @@ h1 {
     h1 {
         font-size: 5.1vw;
     }
+    #project-grid {
+        grid-row-gap: 6vw;
+    }
     .project-tile {
         width: 42%;
         height: 40vw;
@@ -279,6 +282,9 @@ h1 {
     }
     h1 {
         font-size: 7vw;
+    }
+    #project-grid {
+        grid-row-gap: 9vw;
     }
     .project-tile {
         height: 60vw;
