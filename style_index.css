@@ -133,16 +133,18 @@ h1 {
     opacity: 0;
 }
 .project-tile:hover .project-title::before {
-    padding-right: 0.5rem;
+    padding-right: 0.5vw;
     opacity: 1;
     transition: .5s; 
 }
 .project-tile:hover .project-title::after {
-    padding-left: 0.5rem;
+    padding-left: 0.5vw;
     opacity: 1;
     transition: .5s; 
 }
 .project-tile:hover .project-title {
+    color: lightcoral;
+    /* background-color: black; */
     font-size: 1.3vw;
     transition: 0.5s;
 }
