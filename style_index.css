@@ -174,9 +174,10 @@ h1 {
     border-top: 0.6vw solid #3B3132;
 }
 #contacts-section {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
 }
 .contacts-tile {
     /* border: 1px solid red; */
@@ -332,6 +333,6 @@ h1 {
         font-size: 3.3vw;
     }
     .contacts-tile {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 }
