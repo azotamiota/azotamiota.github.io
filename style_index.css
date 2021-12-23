@@ -193,10 +193,11 @@ h1 {
 }
 #footer {
     background-color: #A7465C;
+    position: absolute;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 20vh;
     border-top: 0.6vw solid #3B3132;
     border-bottom: 0.6vw solid #3B3132;
 }
