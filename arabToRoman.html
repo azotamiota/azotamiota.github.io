@@ -9,6 +9,32 @@
 <body>
     <h1>Arabic to Roman numbers converter</h1>
      <h2>Please enter a number</h2>
-    
+    <script>
+
+function convertToRoman(num) {
+const romanNums = {
+  1: 'I',
+  2: 'II',
+  3: 'III',
+  4: 'IV',
+  5: 'V',
+  6: 'VI',
+  7: 'VII',
+  8: 'VIII',
+  9: 'IX',
+  10: 'X',
+  50: 'L',
+  100: 'C',
+  500: 'D',
+  1000: 'M'
+}
+let numToStr = num.toString().split('')
+console.log(numToStr)
+ return num;
+}
+
+convertToRoman(36);
+
+    </script>
 </body>
 </html>
