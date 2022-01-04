@@ -28,12 +28,17 @@ const romanNums = {
   500: 'D',
   1000: 'M'
 }
-let numToStr = num.toString().split('')
-console.log(numToStr)
+const digitArr = num.toString().split('')
+//console.log(digitArr)
+for (let i = 0; i < digitArr.length; i++) {
+  digitArr[i] = digitArr[i] * (10 ** (digitArr.length-(i+1)))
+}console.log(digitArr)
+//console.log(Object.keys(romanNums))
+
  return num;
 }
 
-convertToRoman(36);
+convertToRoman(3524);
 
     </script>
 </body>
