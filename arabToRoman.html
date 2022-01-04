@@ -32,9 +32,17 @@ const digitArr = num.toString().split('')
 //console.log(digitArr)
 for (let i = 0; i < digitArr.length; i++) {
   digitArr[i] = digitArr[i] * (10 ** (digitArr.length-(i+1)))
-}console.log(digitArr)
+}//console.log(digitArr)
 //console.log(Object.keys(romanNums))
-
+const romNumKeys = Object.keys(romanNums)
+for (let item of digitArr) {
+  //console.log('Item type: ',typeof item)
+ const largestDividers = (romNumKeys.map(divider => {
+   //console.log('mapped divider: ', divider)
+   //console.log('mapped item-divider: ', Math.abs((item-Number(divider))) )
+    return (Math.abs(item-Number(divider)))}));
+    console.log('largest dividers: ',largestDividers)
+}
  return num;
 }
 
