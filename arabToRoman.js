@@ -44,5 +44,3 @@ function convertToRoman(num) {
     }
      return finalResult;
     }
-    
-    convertToRoman(68);
