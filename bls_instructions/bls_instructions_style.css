@@ -107,6 +107,7 @@ main {
   #navbar {
     font-size: 15px;
   }
+}
   .main-section {
     border: 1px solid darkslategrey;
     margin-bottom: 25px;
@@ -152,4 +153,4 @@ main {
           #navbar {
             font-size:7px;
           }
-          }
+        }
