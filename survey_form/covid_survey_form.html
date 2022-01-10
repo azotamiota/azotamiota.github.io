@@ -1,0 +1,68 @@
+<html lang=eng>
+  <link rel="stylesheet" href="survey_form_style.css">
+<body>
+  <form id="survey-form">
+  <h1 id="title">Covid vaccination survey form</h1> 
+  <p id="description">Thank you for providing your details</p>
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label id="email-label">Email</label>
+      <input type="email" id="email"
+         placeholder="Enter your email" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label id="number-label">Age</label>
+      <input type="number" id="number" placeholder="Enter your age" min="12" max="110" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <p>Which option describes your current role?</p>
+      <label>
+        <input value="student" type="radio" name="role">Student</label>
+        <label>
+        <input value="fulltime" type="radio" name="role">Full-time job</label>
+      <label>
+        <input value="parttime" type="radio" name="role">Part-time job</label>
+      <label>
+        <input value="unemployed" type="radio" name="role">Unemployed</label>
+      <label>
+        <input value="retired" type="radio" name="role">Retired</label>
+    </div>
+    <div class="form-group">
+      <p>Which vaccine did you get?</p>
+      <label>
+        <select id="dropdown" name="vaccine" class="form-control" required>
+      <option disabled selected value>Select vaccine</option>
+        <option value="astra">AstraZeneca</option>
+        <option value="pfizer">Pfizer / BioNtech</option>
+        <option value="moderna">Moderna</option>
+        <option value="sputnik">Sputnik</option>
+        <option value="sinopharm">Sinopharm</option>
+          <option value="other">Other</option>
+        <option value="none">None</option>
+        </select>
+     </div>
+  <div class="form-group">
+     <p>What medical conditions have you got?</p>
+    <label>
+      <input name="sickness" type="checkbox" value="highb">High blood pressure</label>
+    <label>
+      <input name="sickness" type="checkbox" value="diab">Diabetes</label>
+    <label>
+      <input name="sickness" type="checkbox" value="cancer">Cancer</label>
+    <label>
+      <input name="sickness" type="checkbox" value="other">Other</label>
+    <label>
+      <input name="sickness" type="checkbox" value="none">None</label>
+    </div>
+   <div class="form-group">
+     <p>Any important information about yourself?</p>
+     <textarea type="text" rows="5" cols="50" placeholder="Enter information here..."></textarea>
+      </div>
+      <div>
+        <input id="submit" type="submit">
+  </form>
+ </body>
+</html>
