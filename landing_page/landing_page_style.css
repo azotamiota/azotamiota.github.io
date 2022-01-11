@@ -18,6 +18,23 @@ background-color:white;
 margin-left: 0;
 font-size: 20px;;
 }
+
+#sticker {
+    width: 10vw;
+    position: fixed;
+    right: 10px;
+    z-index: 1;
+    background-color: rgb(240, 218, 157);
+    transition: .5s;
+    padding: 1vw;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#sticker:hover {
+    background-color: coral;
+}
 .boxes > div {
 display: flex;
 flex-wrap: nowrap;
@@ -57,7 +74,7 @@ color: black;
 }
 
 a:hover {
-text-decoration: underline;
+text-decoration: none;
 background-color: coral;
 }
 
