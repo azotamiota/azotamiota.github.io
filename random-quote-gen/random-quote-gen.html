@@ -18,6 +18,7 @@
 }
 #quote-box {
     border: 1px solid black;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
     width: 45vw;
@@ -25,36 +26,58 @@
 }
 #text {
     border: 1px solid black;
-   
+    background-color: white;   
 }
 #author {
     border: 1px solid black;
+    background-color: white;
+
+}
+a {
+    color: turquoise;
 }
 </style>
   <div id="wrapper" class='d-flex justify-content-center align-items-center'>
-    <div id='quote-box' class='container'>
+    <div id='quote-box' class='container rounded-3 fade-in-up'>
         <div id="text" class='row fs-3 mt-4 ms-5 me-5 mb-3 p-3 text-center'>
-    
+            <i id='quote-left-icon' class="fa fa-quote-left"></i>
         </div>
         <div id="author" class="row justify-content-end p-3">
         </div>
-        <div class='row m-4'>
-            <a id="tweet-quote" class='col-10' href="https://twitter.com/intent/tweet">
-                <i class='fa fa-twitter'></i>
+        <div id='lower-row' class='row m-4'>
+            <a id="tweet-quote" class='col-1' href="https://twitter.com/intent/tweet">
+                <i id='twitter-icon' class="fa fa-twitter-square fa-2x" name='icon'></i>
+            </a>
+            <a id="facebook-quote" class='col-9' href="https://twitter.com/intent/tweet">
+                <i id='facebook-icon' class="fa fa-facebook-square fa-2x" name='icon'></i>
             </a>
             <button id="new-quote" class='col-2 p-0' onclick=randomQuoteGenerator()>New quote</button>
         </div>
     </div>
   </div>
 <script>
+
 randomQuoteGenerator = () => {
-const randomGen = Math.ceil(Math.random() * 325)
-console.log(randomGen);
-fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de20d7514b93dd69b149289264997b49459dd/enterpreneur-quotes.json')
+const randomColGen = [Math.ceil(Math.random() * 255), Math.ceil(Math.random() * 255), Math.ceil(Math.random() * 255)]
+console.log(randomColGen)
+document.body.style.transitionDuration = '2s';
+document.body.style.background = `rgb(${randomColGen})`;
+document.body.style.color = `rgb(${randomColGen})`;
+let iTag = document.getElementsByTagName('i');
+for (tag of iTag) {
+    tag.style.transitionDuration = '2s';
+    tag.style.color = `rgb(${randomColGen})`;
+}
+//document.getElementById('facebook-icon').style.color = `rgb(${randomColGen})`;
+
+
+const randomGenQ = Math.ceil(Math.random() * 325)
+console.log(randomGenQ);
+fetch('https://type.fit/api/quotes')
                 .then(response => response.json())
                 .then(data => {
-                    document.getElementById('text').innerHTML = data[randomGen]['text'];
-                    document.getElementById('author').innerHTML = '- ' + data[randomGen]['from'];
+                    document.getElementById('quote-left-icon').innerHTML = '&nbsp' + '&nbsp' + data[randomGenQ]['text'];
+                    document.getElementById('author').innerHTML = '- ' + data[randomGenQ]['author'];
                     }
                 );}
 
