@@ -17,7 +17,7 @@
     width: 100%
 }
 #quote-box {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -25,11 +25,11 @@
     /* min-height: 60vh; */
 }
 #text {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: white;   
 }
 #author {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: white;
 
 }
@@ -45,10 +45,10 @@ a {
         <div id="author" class="row justify-content-end p-3">
         </div>
         <div id='lower-row' class='row m-4'>
-            <a id="tweet-quote" class='col-1' href="https://twitter.com/intent/tweet">
+            <a id="tweet-quote" class='col-1' href="" target='_blank'>
                 <i id='twitter-icon' class="fa fa-twitter-square fa-2x" name='icon'></i>
             </a>
-            <a id="facebook-quote" class='col-9' href="https://twitter.com/intent/tweet">
+            <a id="facebook-quote" class='col-9' href='https://www.facebook.com/sharer/sharer.php?u=azotamiota.github.io/random-quote-gen/random-quote-gen.html' target='_blank'>
                 <i id='facebook-icon' class="fa fa-facebook-square fa-2x" name='icon'></i>
             </a>
             <button id="new-quote" class='col-2 p-0' onclick=randomQuoteGenerator()>New quote</button>
@@ -78,6 +78,7 @@ fetch('https://type.fit/api/quotes')
                 .then(data => {
                     document.getElementById('quote-left-icon').innerHTML = '&nbsp' + '&nbsp' + data[randomGenQ]['text'];
                     document.getElementById('author').innerHTML = '- ' + data[randomGenQ]['author'];
+                    document.getElementById('tweet-quote').href = 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + data[randomGenQ]['text'] + ' ' + data[randomGenQ]['author'];
                     }
                 );}
 
