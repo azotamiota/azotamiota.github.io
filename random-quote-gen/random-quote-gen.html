@@ -53,7 +53,27 @@ a:hover {
     color: white;
     transition: 1s;
 }
+#code-box {
+  top: 5px;
+  background-color: white;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-family: 'monospace';
+  text-align: center;
+  justify-content: center;
+  height: auto;
+  width: 7%;
+  
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
 </style>
+  <div id='code-box'>
+    <a id='source-code' href='https://codepen.io/azotamiota/pen/ExwMLzO' target='_blank'>Click here to see source code</a>
+  </div>
   <div id="wrapper" class='justify-content-center align-items-center'>
     <div id='quote-box' class='container rounded-3 fade-in-up'>
         <div id="text" class='row fs-3 mt-4 ms-5 me-5 mb-3 p-3 text-center'>
@@ -84,7 +104,10 @@ document.body.style.transitionDuration = '2s';
 document.body.style.background = `rgb(${randomColGen})`;
 document.getElementById('new-quote').style.background = `rgb(${randomColGen})`;
 document.getElementById('new-quote').style.transitionDuration = '2s';
+document.getElementById('source-code').style.color = `rgb(${randomColGen})`
+document.getElementById('source-code').style.transitionDuration = '2s';
 document.body.style.color = `rgb(${randomColGen})`;
+
 
 
 let iTag = document.getElementsByTagName('i');
