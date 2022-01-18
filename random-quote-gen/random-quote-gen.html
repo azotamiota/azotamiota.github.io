@@ -45,7 +45,7 @@ a {
   <div id="wrapper" class='justify-content-center align-items-center'>
     <div id='quote-box' class='container rounded-3 fade-in-up'>
         <div id="text" class='row fs-3 mt-4 ms-5 me-5 mb-3 p-3 text-center'>
-            <i id='quote-left-icon' class="fa fa-quote-left"></i>
+            
         </div>
         <div id="author" class="row justify-content-end p-3">
         </div>
@@ -85,23 +85,36 @@ for (tag of iTag) {
 
 const randomGenQ = Math.ceil(Math.random() * 325)
 console.log(randomGenQ);
-fetch('https://type.fit/api/quotes')
+fetch('enterpreneur-quotes.json')
                 .then(response => response.json())
                 .then(data => {
-                    
-                    document.getElementById('quote-left-icon').innerHTML = '&nbsp' + '&nbsp' + data[randomGenQ]['text'];
-                    document.getElementById('author').innerHTML = '- ' + data[randomGenQ]['author'];
-                    document.getElementById('tweet-quote').href = 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + data[randomGenQ]['text'] + ' ' + data[randomGenQ]['author'];
-                    
-                }
-                );}
+                    $(document).ready(function(){
 
-$(document).ready(function(){
+                    $('#text').animate ({opacity: 0}, 500, function () {
+                        $(this).animate({opacity: 1}, 500);
+                        $('#text').html(`<span id="quote-left-ico" class="fa fa-quote-left">${'&nbsp' + '&nbsp' + data[randomGenQ]["text"]}</span>`)}
+                    );
 
-$('#text').animate ({opacity: 0}, 500, function () {
-    $(this).animate({opacity: 1}, 500)}
-)
-});
+                    $('#author').animate ({opacity: 0}, 500, function () {
+                        $(this).animate({opacity: 1}, 500);
+                        $('#author').text('-' + ' ' + data[randomGenQ]['from'])}
+                    );
+
+                    // $('#quote-left-icon').animate ({opacity: 0}, 500, function () {
+                    //     $(this).animate({opacity: 1}, 500);
+                    // })
+                    console.log('quote DB lenght:', data.length)
+                    })
+                    // document.getElementById('quote-left-icon').innerHTML = '&nbsp' + '&nbsp' + data[randomGenQ]['text'];
+                    // document.getElementById('author').innerHTML = '- ' + data[randomGenQ]['author'];
+                    // document.getElementById('tweet-quote').href = 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + data[randomGenQ]['text'] + ' ' + data[randomGenQ]['author'];
+                    
+                } 
+                )
+            
+            }
+
+
 randomQuoteGenerator()
 </script>
 </body>
