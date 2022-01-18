@@ -14,7 +14,6 @@
 #wrapper {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     height: 100vh;
     width: 100%
 }
@@ -85,14 +84,15 @@ for (tag of iTag) {
 
 const randomGenQ = Math.ceil(Math.random() * 325)
 console.log(randomGenQ);
-fetch('enterpreneur-quotes.json')
+fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de20d7514b93dd69b149289264997b49459dd/enterpreneur-quotes.json')
                 .then(response => response.json())
                 .then(data => {
+                    console.log('quote DB element:', data[randomGenQ])
                     $(document).ready(function(){
 
                     $('#text').animate ({opacity: 0}, 500, function () {
                         $(this).animate({opacity: 1}, 500);
-                        $('#text').html(`<span id="quote-left-ico" class="fa fa-quote-left">${'&nbsp' + '&nbsp' + data[randomGenQ]["text"]}</span>`)}
+                        $('#text').html(`<span id="quote-left-ico" class="fa fa-quote-left">${'&nbsp' + '&nbsp' + data[randomGenQ]['text']}</span>`)}
                     );
 
                     $('#author').animate ({opacity: 0}, 500, function () {
