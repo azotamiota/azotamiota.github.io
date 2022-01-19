@@ -18,18 +18,17 @@
     width: 100%
 }
 #quote-box {
-   
+    
     background-color: white;
     margin-left: auto;
     margin-right: auto;
     width: 60vw;
 }
 #text {
-   
     background-color: white;   
 }
 #author {
-    
+ 
     background-color: white;
 
 }
@@ -53,27 +52,26 @@ a:hover {
     transition: 1s;
 }
 #code-box {
-    top: 5px;
-    background-color: white;
-    position: sticky;
-    display: flex;
-    flex-direction: column;
-    color: black;
-    font-family: 'monospace';
-    text-align: center;
-    justify-content: center;
-    height: auto;
-    width: 10%;
-    padding: 10px;
-    margin-top: 30px;
-    border-radius: 10px;
-}
+  top: 5px;
+  background-color: white;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-family: 'monospace';
+  text-align: center;
+  justify-content: center;
+  height: auto;
+  width: 7%;
+  
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 750px) {
       #code-box {
           display: none;
-          width: 60vw;
       }
       #quote-box {
            width: 90vw;
@@ -101,9 +99,6 @@ a:hover {
             <button id="new-quote" type='button' style='color: white' class='btn ms-auto bd-highlight p-2' onclick=randomQuoteGenerator()>New quote</button>
         </div>
     </div>
-    <div id='language-box'>
-        <a id='source-code' href='https://codepen.io/azotamiota/pen/ExwMLzO' target='_blank'>Click here to see source code</a>
-      </div>
     <div class='footer m-4'>
               <a class='webmaster' href='https://azotamiota.github.io/'>by azotamiota</a>
    </div>
@@ -133,7 +128,8 @@ for (tag of iTag) {
 
 const randomGenQ = Math.ceil(Math.random() * 325)
 console.log(randomGenQ);
-fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de20d7514b93dd69b149289264997b49459dd/enterpreneur-quotes.json')
+fetch('https://raw.githubusercontent.com/azotamiota/azotamiota.github.io/main/random-quote-gen/hungarian_quotes.json')
+//fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de20d7514b93dd69b149289264997b49459dd/enterpreneur-quotes.json')
                 .then(response => response.json())
                 .then(data => {
                     console.log('quote DB element:', data[randomGenQ])
@@ -149,14 +145,17 @@ fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de2
                         $('#author').text('-' + ' ' + data[randomGenQ]['from'])}
                     );
 
-                    
                     console.log('quote DB lenght:', data.length)
                     })
-            
-                    document.getElementById('tweet-quote').href = 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + data[randomGenQ]['text'] + ' ' + data[randomGenQ]['from']; 
+                   
+                    document.getElementById('tweet-quote').href = 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + data[randomGenQ]['text'] + ' ' + data[randomGenQ]['from'];
+                    
                 } 
                 )
+            
             }
+
+
 randomQuoteGenerator()
 </script>
 </body>
