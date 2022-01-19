@@ -167,7 +167,7 @@ fetch('https://raw.githubusercontent.com/azotamiota/azotamiota.github.io/main/ra
 
                     $('#author').animate ({opacity: 0}, 500, function () {
                         $(this).animate({opacity: 1}, 500);
-                        $('#author').text('-' + ' ' + data[randomGenQ]['from'])}
+                        $('#author').text(data[randomGenQ]['from'])}
                     );
 
                     console.log('quote DB lenght:', data.length)
