@@ -130,7 +130,8 @@ for (tag of iTag) {
 
 const randomGenQ = Math.ceil(Math.random() * 325)
 console.log(randomGenQ);
-fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de20d7514b93dd69b149289264997b49459dd/enterpreneur-quotes.json')
+fetch('https://raw.githubusercontent.com/azotamiota/azotamiota.github.io/main/random-quote-gen/hungarian_quotes.json')
+//fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de20d7514b93dd69b149289264997b49459dd/enterpreneur-quotes.json')
                 .then(response => response.json())
                 .then(data => {
                     console.log('quote DB element:', data[randomGenQ])
