@@ -11,6 +11,10 @@
 </head>
 <body>
 <style>
+body {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -52,21 +56,34 @@ a:hover {
     transition: 1s;
 }
 #code-box {
-  top: 5px;
-  background-color: white;
-  position: sticky;
-  display: flex;
-  flex-direction: column;
-  color: black;
-  font-family: 'monospace';
-  text-align: center;
-  justify-content: center;
-  height: auto;
-  width: 7%;
-  
-  padding: 10px;
-  margin-left: 5px;
-  border-radius: 10px;
+    top: 5px;
+    background-color: white;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    /* font-family: 'monospace'; */
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: 10%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+#language-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    /* font-family: 'monospace'; */
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: 10%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -99,6 +116,9 @@ a:hover {
             <button id="new-quote" type='button' style='color: white' class='btn ms-auto bd-highlight p-2' onclick=randomQuoteGenerator()>New quote</button>
         </div>
     </div>
+    <div id='language-box'>
+        <a id='language-change' href='https://azotamiota.github.io/random-quote-gen/random-quote-gen.html' target='_blank'>Idézetek angolul</a>
+      </div>
     <div class='footer m-4'>
               <a class='webmaster' href='https://azotamiota.github.io/'>by azotamiota</a>
    </div>
@@ -114,6 +134,8 @@ document.getElementById('new-quote').style.background = `rgb(${randomColGen})`;
 document.getElementById('new-quote').style.transitionDuration = '2s';
 document.getElementById('source-code').style.color = `rgb(${randomColGen})`
 document.getElementById('source-code').style.transitionDuration = '2s';
+document.getElementById('language-change').style.color = `rgb(${randomColGen})`
+document.getElementById('language-change').style.transitionDuration = '2s';
 document.body.style.color = `rgb(${randomColGen})`;
 
 
