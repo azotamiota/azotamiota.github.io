@@ -102,27 +102,27 @@ a:hover {
 
 </style>
   <div id='code-box'>
-    <a id='source-code' href='https://codepen.io/azotamiota/pen/ExwMLzO' target='_blank'>Click here to see source code</a>
+    <a class='text-color' id='source-code' href='https://codepen.io/azotamiota/pen/ExwMLzO' target='_blank'>Click here to see source code</a>
   </div>
   <div id="wrapper" class='justify-content-center align-items-center'>
     <div id='quote-box' class='container-sm rounded-3 fade-in-up'>
-        <div id="text" class='row fs-3 mt-4 ms-1 me-1 mb-3 p-1 text-center'>
+        <div id="text" class='text-color row fs-3 mt-4 ms-1 me-1 mb-3 p-1 text-center'>
             
         </div>
-        <div id="author" class="row justify-content-end p-3">
+        <div id="author" class="text-color row justify-content-end p-3">
         </div>
         <div id='lower-row' class='d-flex flex-row bd-highlight m-4'>
             <a id="tweet-quote" class='bd-highlight m-1' href="" target='_blank'>
-                <i id='twitter-icon' class="fa fa-twitter-square fa-3x" name='icon'></i>
+                <i id='twitter-icon' class="text-color fa fa-twitter-square fa-3x" name='icon'></i>
             </a>
             <a id="facebook-quote" class='bd-highlight m-1' href='https://www.facebook.com/sharer/sharer.php?u=azotamiota.github.io/random-quote-gen/random-quote-gen.html' target='_blank'>
-                <i id='facebook-icon' class="fa fa-facebook-square fa-3x" name='icon'></i>
+                <i id='facebook-icon' class="text-color fa fa-facebook-square fa-3x" name='icon'></i>
             </a>
             <button id="new-quote" type='button' style='color: white' class='btn ms-auto bd-highlight p-2' onclick=randomQuoteGenerator()>New quote</button>
         </div>
     </div>
     <div id='language-box'>
-        <a id='language-change' href='https://azotamiota.github.io/random-quote-gen/random-quote-gen-hun.html'>Quotes in Hungarian</a>
+        <a class='text-color' id='language-change' href='https://azotamiota.github.io/random-quote-gen/random-quote-gen-hun.html'>Quotes in Hungarian</a>
       </div>
     <div class='footer m-4'>
               <a class='webmaster' href='https://azotamiota.github.io/'>by azotamiota</a>
@@ -132,34 +132,26 @@ a:hover {
 
 randomQuoteGenerator = () => {
 const randomColGen = [Math.ceil(Math.random() * 220), Math.ceil(Math.random() * 220), Math.ceil(Math.random() * 220)]
-console.log(randomColGen)
 document.body.style.transitionDuration = '2s';
 document.body.style.background = `rgb(${randomColGen})`;
 document.getElementById('new-quote').style.background = `rgb(${randomColGen})`;
 document.getElementById('new-quote').style.transitionDuration = '2s';
-document.getElementById('source-code').style.color = `rgb(${randomColGen})`
-document.getElementById('source-code').style.transitionDuration = '2s';
-document.getElementById('language-change').style.color = `rgb(${randomColGen})`
-document.getElementById('language-change').style.transitionDuration = '2s';
-document.body.style.color = `rgb(${randomColGen})`;
 
 
 
-let iTag = document.getElementsByTagName('i');
-for (tag of iTag) {
-    tag.style.transitionDuration = '2s';
-    tag.style.color = `rgb(${randomColGen})`;
+let coloredTags = document.getElementsByClassName('text-color');
+for (elem of coloredTags) {
+    elem.style.transitionDuration = '2s';
+    elem.style.color = `rgb(${randomColGen})`;
 }
 
 
 
 const randomGenQ = Math.ceil(Math.random() * 325)
-console.log(randomGenQ);
 const lettersOnly = /[a-zA-Z]/
 fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de20d7514b93dd69b149289264997b49459dd/enterpreneur-quotes.json')
                 .then(response => response.json())
                 .then(data => {
-                    console.log('quote DB element:', data[randomGenQ])
                     $(document).ready(function(){
 
                     $('#text').animate ({opacity: 0}, 500, function () {
@@ -175,8 +167,7 @@ fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de2
                         $('#author').text('-' + ' ' + data[randomGenQ]['from'])}
                     );
 
-                    
-                    console.log('quote DB lenght:', data.length)
+                    // console.log('quote DB lenght:', data.length) // Uncomment to check the length of database in the console
                     })
             
                     document.getElementById('tweet-quote').href = 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + data[randomGenQ]['text'] + ' ' + data[randomGenQ]['from']; 
