@@ -1,27 +1,28 @@
 <html lang=eng>
   <link rel="stylesheet" href="survey_form_style.css">
 <body>
-  <div id='code-box'>
+  <!-- Optional button to see source code -->
+  <!-- <div id='code-box'>
     <a href='https://codepen.io/azotamiota/pen/NWaxWga' target='_blank'>Click here to see source code</a>
-  </div>
+  </div> -->
   <form id="survey-form">
   <h1 id="title">Covid vaccination survey form</h1> 
   <p id="description">Thank you for providing your details</p>
     <div class="form-group">
-      <label id="name-label" for="name">Name</label>
+      <h4 id="name-label" for="name">Name</h4>
       <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
     </div>
     <div class="form-group">
-      <label id="email-label">Email</label>
+      <h4 id="email-label">Email</h4>
       <input type="email" id="email"
          placeholder="Enter your email" class="form-control" required>
     </div>
     <div class="form-group">
-      <label id="number-label">Age</label>
+      <h4 id="number-label">Age</h4>
       <input type="number" id="number" placeholder="Enter your age" min="12" max="110" class="form-control" required>
     </div>
     <div class="form-group">
-      <p>Which option describes your current role?</p>
+      <h4>Which option describes your current role?</h4>
       <label>
         <input value="student" type="radio" name="role">Student</label>
         <label>
@@ -34,7 +35,7 @@
         <input value="retired" type="radio" name="role">Retired</label>
     </div>
     <div class="form-group">
-      <p>Which vaccine did you get?</p>
+      <h4>Which vaccine did you get?</h4>
       <label>
         <select id="dropdown" name="vaccine" class="form-control" required>
       <option disabled selected value>Select vaccine</option>
@@ -48,8 +49,7 @@
         </select>
      </div>
   <div class="form-group">
-     <p>What medical conditions have you got?</p>
-    <label>
+     <h4>What medical conditions have you got?</h4>
       <input name="sickness" type="checkbox" value="highb">High blood pressure</label>
     <label>
       <input name="sickness" type="checkbox" value="diab">Diabetes</label>
@@ -61,7 +61,7 @@
       <input name="sickness" type="checkbox" value="none">None</label>
     </div>
    <div class="form-group">
-     <p>Any important information about yourself?</p>
+     <h4>Any important information about yourself?</h4>
      <textarea type="text" rows="5" cols="50" placeholder="Enter information here..."></textarea>
       </div>
       <div>
