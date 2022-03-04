@@ -8,7 +8,6 @@ body {
   margin-top: 80px;
 }
 #navbarSupportedContent {
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -30,6 +29,11 @@ body {
 #navbar-nav {
   display: flex;
   flex-direction: row;
+}
+.navbar-name {
+  font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
 .nav-item {
  display: flex;
@@ -58,7 +62,7 @@ body {
   cursor:pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover {
   background-color: #2980B9;
 }
 
