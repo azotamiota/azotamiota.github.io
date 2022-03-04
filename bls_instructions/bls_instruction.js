@@ -2,9 +2,8 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show")
 }
 
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (!event.target.matches(".dropbtn") && !event.target.matches(".fas")) {
-    console.log("clicked outside of the button");
     if (
       document
         .getElementsByClassName("dropdown-content")[0]
@@ -15,4 +14,4 @@ window.onclick = function (event) {
         .classList.remove("show");
     }
   }
-};
+});
