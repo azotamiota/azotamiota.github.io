@@ -14,8 +14,5 @@ window.onclick = function (event) {
         .getElementsByClassName("dropdown-content")[0]
         .classList.remove("show");
     }
-
-    // for (let i = 0; i < dropdowns.length; i++) {
-    //   var openDropdown = dropdowns[i];
   }
 };

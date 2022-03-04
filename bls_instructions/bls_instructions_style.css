@@ -135,11 +135,6 @@ a:visited {
   color: black;
  
   }
-  /* .sticker:hover {
-    background-color: rgb(130, 52, 219);
-    color: yellow;
-    font-size: 20px;
-  } */
   .nav-item:hover .nav-link { 
   background-color: rgb(130, 52, 219);
   color: white;
@@ -204,28 +199,11 @@ main {
         position: relative;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly; */
-    /* top: 0px; */
-    /* left: 0px; */
-    /* height: 100%; */
     width: 100%;
     border-bottom: 5px solid lightgrey;
-    /* padding: 2%; */
     overflow:auto;
 }
-      /* a {
-        border: 1px solid black;
-  display: flex;
-  margin: 5px;
-  height: 100px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  align-items: center;
-  background-color: rgb(240, 218, 157);
-  margin-bottom: 3%;
-  transition: .5s;
-} */
+
 .nav-link
       code {
         font-size: 12px;
