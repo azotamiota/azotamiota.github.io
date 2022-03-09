@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     width: 100vw;
     background-color: white;
     overflow-x: hidden;
@@ -10,10 +10,8 @@ body {
     box-sizing: border-box;
 }
 .subtitle {
-    font-family: 'Mandali';
-    font-style: italic;
     font-size: 1.5vw;
-    color: #A37A65;
+    color: navajowhite;
 }
 
 nav {
@@ -66,11 +64,11 @@ a:link {
     background:
         /* top, transparent black, faked with gradient */ 
         linear-gradient(
-          rgba(0, 0, 0, 0.6), 
-          rgba(0, 0, 0, 0.6)
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
         ),
         /* bottom, image */
-        url('https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2068&q=80');
+        url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80');
     
     background-position: center;
     background-repeat: no-repeat;
@@ -92,14 +90,13 @@ a:link {
     padding: 3vw 1vw;
 }
 .section-header {
-    font-family: monospace;
+    /* font-family: monospace; */
     font-size: 3.2vw;
     text-align: center;
     margin: 2rem auto 3rem auto;
     color: navajowhite;
 }
 h1 {
-    font-family: monospace;
     font-size: 3.2vw;
     text-align: center;
     /* border: 1px solid black; */
