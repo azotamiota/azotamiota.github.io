@@ -154,8 +154,8 @@ fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de2
                 .then(data => {
                     $(document).ready(function(){
 
-                    $('#text').animate ({opacity: 0}, 500, function () {
-                        $(this).animate({opacity: 1}, 500);
+                    $('#text').animate ({opacity: 0}, 2000, function () {
+                        $(this).animate({opacity: 1}, 2000);
                         data[randomGenQ]['text'][0].match(lettersOnly) ?
                         $('#text').html(`<span id="quote-left-ico" class="fa fa-quote-left">${'&nbsp' + '&nbsp' + data[randomGenQ]['text']}</span>`) :
                         $('#text').html(`<span id="quote-left-ico" class="fa fa-quote-left">${'&nbsp' + '&nbsp' + data[randomGenQ]['text'].slice(1)}</span>`)}
