@@ -83,6 +83,14 @@ a:link {
     width: 100vw;
     height: 100vh;
 }
+#skills-btn {
+    color: navajowhite;
+    position: absolute;
+    padding: 1rem 3rem;
+    border: 0.1px solid navajowhite;
+    left: 3vw;
+    top: 20vh;
+}
 #projects-session {
     background-color: #A37A65;
     display: flex;
