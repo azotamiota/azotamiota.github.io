@@ -94,13 +94,15 @@ a:link {
     top: 20vh;
 }
 .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     top: 4rem;
     left: 0rem;
+    opacity: 0;
 }
 .show {
-    display:block;
+    opacity: 1;
+    transition: 2s;
 }
 .skill-list-items {
     border: 1px solid white;
