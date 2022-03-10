@@ -85,11 +85,29 @@ a:link {
 }
 #skills-btn {
     color: navajowhite;
+    letter-spacing: 2px;
     position: absolute;
     padding: 1rem 3rem;
     border: 0.1px solid navajowhite;
+    border-radius: 5px;
     left: 3vw;
     top: 20vh;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 0rem;
+}
+.show {
+    display:block;
+}
+.skill-list-items {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 12rem;
 }
 #projects-session {
     background-color: #A37A65;

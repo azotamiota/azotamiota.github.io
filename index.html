@@ -9,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Chenla' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Mandali' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title style="font-family: monospace;">Portfolio page</title>
 </head>
 <body>
@@ -19,7 +19,19 @@
         <a class="nav-items" href="#contacts">Contact</a>
     </nav>
     <section id="welcome-section">
-        <div id="skills-btn">Skills</div>
+
+    <div id="skills-btn" class="dropdown">
+        <div onclick="myFunction()" class="dropbtn">Skills</div>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="skill-list-items"><i class="fa-brands fa-html5"></i>HTML</div>
+                <div class="skill-list-items"><i class="fa-brands fa-css3-alt"></i>CSS</div>
+                <div class="skill-list-items"><i class="fa-brands fa-js-square"></i>JavaScript</div>
+                <div class="skill-list-items"><i class="fa-brands fa-react"></i>React</div>
+                <div class="skill-list-items"><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
+        </div>
+    </div>
+
+        <!-- <div id="skills-btn">Skills</div> -->
         <h1 class="section-header">Hi, I'm Norbert</h1>
         <p class="subtitle" style="margin-top: 0px;">Front End Developer</p>
     </section>
@@ -120,5 +132,12 @@
       <footer id="footer">
           <p class="footer-content">&copy; 2021 Created by Norbert Majer</p>
       </footer>
+      <script>
+        function myFunction () {
+            document.getElementById('myDropdown').classList.toggle('show')
+        }
+
+
+      </script>
 </body>
 </html>
