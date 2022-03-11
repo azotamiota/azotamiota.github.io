@@ -133,7 +133,11 @@
       </footer>
       <script>
         function myFunction () {
-            document.getElementById('myDropdown').classList.add('show')
+            if (window.innerWidth > 1024) {
+                document.getElementById('myDropdown').classList.add('show')
+            } else {
+                document.getElementById('myDropdown').classList.toggle('show')
+            }
         }
 
 
