@@ -62,12 +62,12 @@ a:link {
     }
 #welcome-section {
     background:
-        /* top, transparent black, faked with gradient */ 
+        
         linear-gradient(
           rgba(0, 0, 0, 0.3), 
           rgba(0, 0, 0, 0.3)
         ),
-        /* bottom, image */
+        
         url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80');
     
     background-position: center;
@@ -119,13 +119,22 @@ a:link {
     width: 12rem;
 }
 #projects-session {
-    background-color: #A37A65;
+
+    /* background-color: #A37A65; */
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 3px solid navajowhite;
     display: flex;
     flex-direction: column;
     padding: 3vw 1vw;
 }
 .section-header {
-    /* font-family: monospace; */
     font-size: 3.2vw;
     text-align: center;
     margin: 2rem auto 3rem auto;
@@ -134,7 +143,6 @@ a:link {
 h1 {
     font-size: 3.2vw;
     text-align: center;
-    /* border: 1px solid black; */
     color: navajowhite;
     margin-bottom: 0;
     margin-top: 0;
@@ -147,14 +155,13 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 3vw;
+    grid-gap: 2vw;
 }
 .project-tile {
-    position: relative;
-    height: 20vw;
-    width: 29%;
+   position: relative;
+    height: 18vw;
+    width: 27%;
     border-radius: 15px;
-    box-shadow: 15px 15px 10px brown;
 }    
 
 .project-title {
