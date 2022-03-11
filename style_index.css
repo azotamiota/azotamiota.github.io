@@ -118,6 +118,13 @@ a:link {
     padding: 1rem 0rem;
     width: 12rem;
 }
+#welcome-photo {
+    position: absolute;
+    right: 10vw;
+    width: 35vh;
+    height: auto;
+    border-radius: 50%;
+}
 #projects-session {
 
     /* background-color: #A37A65; */
@@ -148,7 +155,6 @@ h1 {
     margin-top: 0;
 }
 #project-header {
-    border-bottom: 0.3vw solid;
     padding-bottom: 0.4rem;
 }
 #project-grid {
