@@ -153,7 +153,8 @@ h1 {
     position: relative;
     height: 20vw;
     width: 29%;
-    box-shadow: inset 0px 0px 0px 1px #000;
+    border-radius: 15px;
+    box-shadow: 15px 15px 10px brown;
 }    
 
 .project-title {
@@ -167,7 +168,9 @@ h1 {
     justify-content: center;
     background-color: #29625D;
     font-size: 1.2vw;
-    box-shadow: inset 0px 0px 0px 1px #000;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* box-shadow: inset 0px 0px 0px 1px #000; */
 }
 .project-title::before {
     content: '</';
