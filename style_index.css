@@ -13,10 +13,14 @@ body {
     text-align: end;
     margin: 0px 20rem 1rem 0;
 }
+#name-capital {
+    text-shadow: -5px 2px red;
+}
 .subtitle {
     font-size: 1.5vw;
     color: navajowhite;
     margin: 0px 20rem 0 0;
+    letter-spacing: 3px;
 }
 
 nav {
@@ -80,6 +84,7 @@ a:link {
     height: 100vh;
 }
 #skills-btn {
+    background-color: #000;
     color: navajowhite;
     letter-spacing: 2px;
     position: absolute;
@@ -88,7 +93,6 @@ a:link {
     border-radius: 5px;
     left: 3vw;
     top: 20vh;
-    cursor: pointer;
 }
 .dropdown-content {
     display: grid;
@@ -97,9 +101,17 @@ a:link {
     top: 4rem;
     left: 0rem;
     opacity: 0;
+    z-index: 1;
+}
+.dropbtn {
+    cursor: pointer;
 }
 .show {
     opacity: 1;
+    transition: 2s;
+}
+.fade {
+    opacity: 0;
     transition: 2s;
 }
 .icons {

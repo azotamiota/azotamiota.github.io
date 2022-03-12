@@ -21,7 +21,7 @@
     <section id="welcome-section">
 
     <div id="skills-btn" class="dropdown">
-        <div onclick="myFunction()" class="dropbtn">Skills</div>
+        <div class="dropbtn" onclick="toggleSkills()">Skills</div>
             <div id="myDropdown" class="dropdown-content">
                 <span class="icons fa-brands fa-2xl fa-html5"></span><span class="skill-list-items">HTML</span>
                 <span class="icons fa-brands fa-2xl fa-css3-alt"></span><span class="skill-list-items">CSS</span>
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-        <p class="section-header" id="welcome-header">Hi, I'm Norbert</p>
+        <p class="section-header" id="welcome-header">Hi, I'm <span id="name-capital">N</span>orbert</p>
         <p class="subtitle" style="margin-top: 0px;">Frontend Developer</p>
      
         <img id="welcome-photo" src="https://img.freepik.com/free-vector/cute-people-playing-laptop-cartoon-vector-icon-illustration-people-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4043.jpg?w=740"
@@ -136,8 +136,21 @@
           <p class="footer-content">&copy; 2021 Created by Norbert Majer</p>
       </footer>
       <script>
-        function myFunction () {
-                document.getElementById('myDropdown').classList.toggle('show')
+        const dropDownElem = document.getElementById('myDropdown')
+        function toggleSkills () {
+            dropDownElem.classList.contains('show') ?
+                (dropDownElem.classList.add('fade'),
+                dropDownElem.classList.remove('show')) :
+          
+                (dropDownElem.classList.remove('fade'),
+                dropDownElem.classList.add('show'))
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('#skills-btn') && !event.target.matches('.dropbtn')) {
+                console.log('click detected out of the box');
+                dropDownElem.classList.add('fade'),
+                dropDownElem.classList.remove('show')
+            }
         }
 
 
