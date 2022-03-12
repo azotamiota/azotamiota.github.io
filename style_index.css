@@ -9,17 +9,22 @@ body {
     margin: 0px;
     box-sizing: border-box;
 }
-#welcome-header {
+.section-header {
+    font-size: 3.2vw;
+    font-weight: bold;
+    color: navajowhite;
+    letter-spacing: -2px;
+}
+#welcome-header, #welcome-subtitle {
     text-align: end;
     margin: 0px 20rem 1rem 0;
 }
-#name-capital {
+.letter-shadow {
     text-shadow: -5px 2px red;
 }
 .subtitle {
     font-size: 1.5vw;
     color: navajowhite;
-    margin: 0px 20rem 0 0;
     letter-spacing: 3px;
 }
 
@@ -134,25 +139,18 @@ a:link {
     border-radius: 50%;
 }
 #projects-session {
-
-    /* background-color: #A37A65; */
     background:
         linear-gradient(
           rgba(0, 0, 0, 0.7), 
           rgba(0, 0, 0, 0.7)
         ), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
-     background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 3px solid navajowhite;
     display: flex;
     flex-direction: column;
     padding: 3vw 1vw;
-}
-.section-header {
-    font-size: 3.2vw;
-    font-weight: bold;
-    color: navajowhite;
 }
 #project-header {
     padding-bottom: 0.4rem;
@@ -238,6 +236,12 @@ a:link {
     justify-content: center;
     border-top: 0.6vw solid #3B3132;
 }
+#contacts-header {
+    margin: 0;
+}
+#contacts-subtitle {
+    text-align: center;
+}
 #contacts-section {
     display: flex;
     flex-wrap: wrap;
@@ -250,6 +254,7 @@ a:link {
     text-align: center;
     font-size: 1.5vw;
     padding: 2vw;
+    letter-spacing: 2px;
 }
 .contacts-tile:hover {
     bottom: -8px;
