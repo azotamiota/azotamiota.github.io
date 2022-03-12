@@ -9,9 +9,14 @@ body {
     margin: 0px;
     box-sizing: border-box;
 }
+#welcome-header {
+    text-align: end;
+    margin: 0px 20rem 1rem 0;
+}
 .subtitle {
     font-size: 1.5vw;
     color: navajowhite;
+    margin: 0px 20rem 0 0;
 }
 
 nav {
@@ -61,25 +66,16 @@ a:link {
     text-decoration: underline;
     }
 #welcome-section {
-    background:
-        
-        linear-gradient(
-          rgba(0, 0, 0, 0.3), 
-          rgba(0, 0, 0, 0.3)
-        ),
-        
-        url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80');
-    
-    background-position: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: #3B3132; */
+    background-size: inherit;
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     width: 100vw;
     height: 100vh;
 }
@@ -120,8 +116,8 @@ a:link {
 }
 #welcome-photo {
     position: absolute;
-    right: 10vw;
-    width: 35vh;
+    right: 6vw;
+    width: 11vw;
     height: auto;
     border-radius: 50%;
 }
@@ -143,19 +139,13 @@ a:link {
 }
 .section-header {
     font-size: 3.2vw;
-    text-align: center;
-    margin: 2rem auto 3rem auto;
+    font-weight: bold;
     color: navajowhite;
-}
-h1 {
-    font-size: 3.2vw;
-    text-align: center;
-    color: navajowhite;
-    margin-bottom: 0;
-    margin-top: 0;
 }
 #project-header {
     padding-bottom: 0.4rem;
+    text-align: center;
+    margin-top: 0;
 }
 #project-grid {
     display: flex;
