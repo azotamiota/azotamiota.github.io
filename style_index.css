@@ -261,20 +261,32 @@ a:link {
     transition: 0.5s;
 }
 #footer {
-    background-color: #A7465C;
-    position: absolute;
+    /* background-color: #A7465C; */
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('https://images.unsplash.com/photo-1644074992646-47d68f8afb5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1830&q=80');
+    background-position: center;
+    background-size: cover;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    border-top: 0.6vw solid #3B3132;
-    border-bottom: 0.6vw solid #3B3132;
+    justify-content: space-between;
+    border-top: 2px solid navajowhite;
+    border-bottom: 2px solid navajowhite;
+    padding: 1vw 1.5vw 1vw 1.5vw
+}
+.profile-link {
+    display: flex;
+}
+.fa-brands {
+    align-items: center;
 }
 .footer-content {
-    padding: 10vh;
-    text-align: right;
     color: navajowhite;
     font-size: 1.1vw;
+}
+.contact-link {
+    margin: 0 1vw 0 1vw;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1024px){
