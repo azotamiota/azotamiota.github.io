@@ -97,12 +97,19 @@
         </div>
     </section>
     <section id="contacts">
-      <p id="contacts-header" class="section-header">Let's work <span class="letter-shadow">t</span>ogether</p>
-      <p id="contacts-subtitle" class="subtitle">contact me</p>
-       <div id="contacts-section">
-
-
-       </div>
+     <div id="contact-labels">
+        <div id="contacts-header" class="section-header">Let's work <span class="letter-shadow">t</span>ogether</div>
+        <div id="contacts-subtitle" class="subtitle">contact me</div>
+      </div>
+      <form id="contact-form">
+          <div class="subtitle form-label">Name</div>
+        <input class="contact-input" id="contact-name" placeholder="Name" type="text" required>
+          <div class="subtitle form-label">Email</div>
+        <input class="contact-input" id="contact-email" placeholder="Email" type="email" required>
+          <div class="subtitle form-label">Message</div>
+        <textarea id="contact-textarea" placeholder="Write your message..." type="text" rows="5" cols="50" required></textarea>
+        <div id="submit-button" class="subtitle">Submit</div>
+      </form>
     </section>
       <footer id="footer">
         <div class="footer-content">Copyright &copy; 2021-2021 Norbert Majer</div>

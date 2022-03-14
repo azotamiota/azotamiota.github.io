@@ -230,35 +230,40 @@ a:link {
 #contacts {
     background-color: #29625D;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 15vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-top: 0.6vw solid #3B3132;
 }
-#contacts-header {
-    margin: 0;
-}
-#contacts-subtitle {
-    text-align: center;
-}
-#contacts-section {
+#contact-labels {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
-.contacts-tile {
-    position: relative;
-    bottom: 0;
-    text-align: center;
-    font-size: 1.5vw;
-    padding: 2vw;
-    letter-spacing: 2px;
+#contacts-header, #contacts-subtitle {
+    margin-left: 5vw;
 }
-.contacts-tile:hover {
-    bottom: -8px;
-    transition: 0.5s;
+#contact-form {
+    margin-right: 5vw;
+}
+.form-label {
+    margin: 10px 0 5px 0;
+}
+.contact-input {
+   width: 23vw;
+    height: 36px;
+    border-radius: 0.25rem;
+    background: #000;
+}
+#contact-textarea {
+    background-color: #000;
+    margin-bottom: 20px;
+}
+#submit-button {
+    border: 1px solid navajowhite;
+    width: fit-content;
+    padding: 15px;
+    cursor: pointer;
 }
 #footer {
     /* background-color: #A7465C; */
