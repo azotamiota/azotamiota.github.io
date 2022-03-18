@@ -228,21 +228,18 @@ a:link {
     grid-column-gap: 2vw;
 }
 #contacts {
-    background-color: #29625D;
+        background-color: #29625D;
     display: flex;
     flex-direction: row;
-    padding: 15vh;
+    padding: 2rem 4rem 2rem 4rem;
     align-items: start;
     justify-content: flex-end;
-    border-top: 0.6vw solid #3B3132;
+    border-top: 3px solid navajowhite;
 }
 #contact-labels {
     display: flex;
     flex-direction: column;
     align-self: center;
-}
-#contacts-header, #contacts-subtitle {
-    margin-left: 5vw;
 }
 #contact-form {
     margin-left: 8vw;
