@@ -9,6 +9,12 @@ body {
     margin: 0px;
     box-sizing: border-box;
 }
+.show-section {
+    display: flex;
+}
+.hide-section {
+    display: none;
+}
 .section-header {
     font-size: 3.2vw;
     font-weight: bold;
@@ -55,6 +61,7 @@ nav {
     justify-content: center;
     font-size: 1.5vw;
     color: navajowhite;
+    cursor: pointer;
 }
 .nav-items:hover {
     font-size: 1.6vw;
@@ -81,7 +88,7 @@ a:link {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: inherit;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     width: 100vw;
     height: 100vh;
@@ -142,9 +149,8 @@ a:link {
     height: auto;
     border-radius: 50%;
 }
-#projects-session {
-    display: none;
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);
+#projects-section {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);
     background-position: right;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -162,6 +168,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https
     border-top: 3px solid navajowhite;
     flex-direction: column;
     padding: 3vw 1vw;
+    min-height: calc(100vh - 100px);
 }
 #project-header {
     padding-bottom: 0.4rem;
@@ -238,8 +245,8 @@ background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https
     grid-template-columns: auto auto;
     grid-column-gap: 2vw;
 }
-#contacts {
-    display: none;
+#contact-section {
+    /* display: none; */
     /* background-color: #29625D; */
     background:
         linear-gradient(
@@ -253,9 +260,11 @@ background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https
     background-size: cover;
     flex-direction: row;
     padding: 2rem 4rem 2rem 4rem;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     border-top: 3px solid navajowhite;
+    overflow: inherit;
+    min-height: calc(100vh - 100px);
 }
 #contact-labels {
     display: flex;

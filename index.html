@@ -14,13 +14,12 @@
 </head>
 <body>
     <nav id="navbar">
-        <a class="nav-items" href="#welcome-section">About</a>
-        <a class="nav-items" href="#projects-session">Work</a>
-        <a class="nav-items" href="#contacts">Contact</a>
+        <a class="nav-items" onclick="showWelcome()">Home</a>
+        <a class="nav-items" onclick="showProjects()">Work</a>
+        <a class="nav-items" onclick="showContact()">Contact</a>
     </nav>
-    <section id="welcome-section">
 
-    
+    <section id="welcome-section" class="show-section">    
     <div id="skills-btn" class="dropbtn" onclick="toggleSkills()">Skills
         <div id="myDropdown" class="dropdown-content">
             <span class="icons fa-brands fa-2xl fa-html5"></span><span class="skill-list-items">HTML</span>
@@ -39,7 +38,7 @@
              alt="Welcome-section-photo">
     </section>
 
-    <section id="projects-session">
+    <section id="projects-section" class="show-section hide-section">
       <p id="project-header" class="section-header">These are some of my <span class="letter-shadow">p</span>rojects</p>
        <div id="project-grid">
 
@@ -95,7 +94,7 @@
 
 
 
-    <section id="contacts">
+    <section id="contact-section" class="show-section hide-section">
      <div id="contact-labels">
         <div id="contacts-header" class="section-header">Let's work <span class="letter-shadow">t</span>ogether</div>
         <div id="contacts-subtitle" class="subtitle">contact me</div>
@@ -108,7 +107,7 @@
 
         <div class="subtitle form-label">Message</div>
         <textarea id="contact-textarea" placeholder="Write your message..." type="text" rows="5" cols="50" required></textarea>
-        <div id="submit-button" class="subtitle">Submit</div>
+        <div id="submit-button" class="subtitle form-label">Submit</div>
 
       </form>
     </section>
@@ -147,7 +146,41 @@
                 dropDownElem.classList.remove('show')
             }
         }
+        const welcomeSection = document.getElementById('welcome-section')
+        const contactSection = document.getElementById('contact-section')
+        const projectsSection = document.getElementById('projects-section')
 
+        function showWelcome() {
+            if (!projectsSection.classList.contains('hide-section')) {
+                console.log('#project-section does not contain .hide-section');
+                projectsSection.classList.add('hide-section');
+            }
+            if (!contactSection.classList.contains('hide-section')) {
+                contactSection.classList.add('hide-section');
+            }
+            welcomeSection.classList.remove('hide-section');
+        }
+        function showProjects() {
+
+            if (!welcomeSection.classList.contains('hide-section')) {
+                console.log('#welcome-section does not contain .hide-section');
+                welcomeSection.classList.add('hide-section');
+            }
+            if (!contactSection.classList.contains('hide-section')) {
+                console.log('this shouldnt be written here');
+                contactSection.classList.add('hide-section');
+            }
+            projectsSection.classList.remove('hide-section');
+        }
+        function showContact() {
+            if (!welcomeSection.classList.contains('hide-section')) {
+                welcomeSection.classList.add('hide-section');
+            }
+            if (!projectsSection.classList.contains('hide-section')) {
+                projectsSection.classList.add('hide-section');
+            }
+            contactSection.classList.remove('hide-section');
+        }
 
       </script>
 </body>
