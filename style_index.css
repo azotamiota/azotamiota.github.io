@@ -31,11 +31,12 @@ body {
 nav {
   background-color: #A7465C;
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   justify-content: flex-end;
   width: 100vw;
-  height: 13vh;
+  height: 50px;
   top: 0px;
+  border-bottom: 2px solid navajowhite;
   z-index: 9999;
 }
 .blank {
@@ -77,6 +78,7 @@ a:link {
 #welcome-section {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);
     background-position: right;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: inherit;
     display: flex;
@@ -86,7 +88,8 @@ a:link {
     justify-content: center;
     align-items: end;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 100px);
+    /* height: 100vh; */
 }
 #skills-btn {
     background-color: #000;
@@ -140,16 +143,23 @@ a:link {
     border-radius: 50%;
 }
 #projects-session {
-    background:
+    display: none;
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: inherit;
+
+    /* background:
         linear-gradient(
           rgba(0, 0, 0, 0.7), 
           rgba(0, 0, 0, 0.7)
         ), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     border-top: 3px solid navajowhite;
-    display: flex;
     flex-direction: column;
     padding: 3vw 1vw;
 }
@@ -229,6 +239,7 @@ a:link {
     grid-column-gap: 2vw;
 }
 #contacts {
+    display: none;
     /* background-color: #29625D; */
     background:
         linear-gradient(
@@ -238,8 +249,8 @@ a:link {
     url('https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    display: flex;
     flex-direction: row;
     padding: 2rem 4rem 2rem 4rem;
     align-items: start;
@@ -264,11 +275,9 @@ a:link {
 .contact-input {
    width: 23vw;
     height: 36px;
-    border-radius: 0.25rem;
-    background: #000;
+    border-radius: 0.3rem;
 }
 textarea {
-    background-color: #000;
     margin-bottom: 20px;
     width: 23vw;
     height: 115px;
@@ -278,19 +287,23 @@ textarea {
     width: fit-content;
     padding: 15px;
     cursor: pointer;
+    border-radius: 0.3rem;
+}
+#submit-button:hover {
+    background-color: aliceblue;
+    transition: 1s;
+    color: #000;
+    
 }
 #footer {
-    background-color: #A7465C;
-    /* background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('https://images.unsplash.com/photo-1644074992646-47d68f8afb5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1830&q=80');
-    background-position: center;
-    background-size: cover; */
-    width: 100%;
     display: flex;
+    background-color: #A7465C;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     border-top: 2px solid navajowhite;
-    border-bottom: 2px solid navajowhite;
-    padding: 1vw 1.5vw 1vw 1.5vw
+    padding: 0 1.5rem 0 1.5rem;
+    height: 50px;
 }
 .profile-link {
     display: flex;
@@ -306,6 +319,12 @@ textarea {
     margin: 0 1vw 0 1vw;
     justify-content: center;
     align-items: center;
+}
+.contact-link:hover .fa-brands{
+    /* font-size: 1.6vw; */
+    color: black;
+    transition: 3s;
+    transform: rotateY(540deg);
 }
 
 @media only screen and (max-width: 1024px){
