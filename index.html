@@ -15,7 +15,7 @@
 <body>
     <nav id="navbar">
         <a class="nav-items" onclick="showWelcome()">Home</a>
-        <a class="nav-items" onclick="showProjects()">Work</a>
+        <a class="nav-items" onclick="showProjectsArticle()">Work</a>
         <a class="nav-items" onclick="showContact()">Contact</a>
     </nav>
 
@@ -38,80 +38,170 @@
              alt="Welcome-section-photo">
     </section>
 
-    <section id="projects-section" class="show-section hide-section">
-      <p id="project-header" class="section-header">These are some of my <span class="letter-shadow">p</span>rojects</p>
-       <div id="project-grid">
+    <article id="projects-article" class="show-section hide-section">
+        <section id="projects1" class="projects-section show-section">
+        <p id="project-header" class="section-header">These are some of my <span class="letter-shadow">p</span>rojects</p>
+        <div id="project-grid">
 
-        <a class="project-tile" href="https://azotamiota.github.io/work-break-timer/" target="_blank" style="background-image: url('images/timer.png'); 
-        background-size: cover;      background-position: center; ">
-            <div class="project-title">
-                Work-Break Timer (React.js)
-            </div>
-        
-        </a>
-        <a class="project-tile" href="https://azotamiota.github.io/calculator" target="_blank" style="background-image: url('images/calculator.png'); 
-        background-size: cover;      background-position: center; ">
-            <div class="project-title">
-                Cute Calculator (React.js)
-            </div>
-        </a>
-
-        <a class="project-tile" href="https://azotamiota.github.io/drum-machine/" target="_blank" style="background-image: url('images/drum.jpg'); 
-        background-size: cover;      background-position: center; ">
+            <a class="project-tile" href="https://azotamiota.github.io/work-break-timer/" target="_blank" style="background-image: url('images/timer.png'); 
+            background-size: cover;      background-position: center; ">
                 <div class="project-title">
-                    Drum Machine (React.js)
+                    Work-Break Timer (React.js)
                 </div>
             
-        </a>
-
-        <a class="project-tile" href="https://azotamiota.github.io/random-quote-gen/random-quote-gen.html" target="_blank" style="background-image: url('images/quote.png'); 
-        background-size: cover;      background-position: center; ">
+            </a>
+            <a class="project-tile" href="https://azotamiota.github.io/calculator" target="_blank" style="background-image: url('images/calculator.png'); 
+            background-size: cover;      background-position: center; ">
                 <div class="project-title">
-                    Random Quote Generator (jQuery)
+                    Cute Calculator (React.js)
                 </div>
-        </a>
-  
-        <a class="project-tile" href="https://azotamiota.github.io/bls_instructions/bls_instructions.html" target="_blank" style="background-image: url('images/BLS.png'); 
-        background-size: cover;      background-position: center; ">
-            <div class="project-title">
-                Doc. Page Template (HTML, CSS, JS)
-            </div>
-        
-        </a>
-        
-        <a  class="project-tile" href="https://github.com/azotamiota/zoopla_property_finder" target="_blank" style="background-image: url('images/propMapNoGo.png'); 
-        background-size: cover;      background-position: center; ">
-            <div class="project-title">
-                Property Finder (Python)
-            </div>
-        </a>
+            </a>
+
+            <a class="project-tile" href="https://azotamiota.github.io/drum-machine/" target="_blank" style="background-image: url('images/drum.jpg'); 
+            background-size: cover;      background-position: center; ">
+                    <div class="project-title">
+                        Drum Machine (React.js)
+                    </div>
                 
-       </div>
-        <div class="next">
-            <a href="projects2.html">Next ></a>
+            </a>
+
+            <a class="project-tile" href="https://azotamiota.github.io/random-quote-gen/random-quote-gen.html" target="_blank" style="background-image: url('images/quote.png'); 
+            background-size: cover;      background-position: center; ">
+                    <div class="project-title">
+                        Random Quote Generator (jQuery)
+                    </div>
+            </a>
+    
+            <a class="project-tile" href="https://azotamiota.github.io/bls_instructions/bls_instructions.html" target="_blank" style="background-image: url('images/BLS.png'); 
+            background-size: cover;      background-position: center; ">
+                <div class="project-title">
+                    Doc. Page Template (HTML, CSS, JS)
+                </div>
+            
+            </a>
+            
+            <a  class="project-tile" href="https://github.com/azotamiota/zoopla_property_finder" target="_blank" style="background-image: url('images/propMapNoGo.png'); 
+            background-size: cover;      background-position: center; ">
+                <div class="project-title">
+                    Property Finder (Python)
+                </div>
+            </a>
+                    
         </div>
-    </section>
+            <div id='firstToSecond' class="page-nav" onclick="showProjects2()">More projects...</div>
+        </section>
 
 
+        <section id="projects2" class="projects-section show-section hide-section">
+        <div id="project-grid">
+            
+            <a class="project-tile" href="https://azotamiota.github.io/survey_form/covid_survey_form.html" name='https://codepen.io/azotamiota/pen/NWaxWga' target="_blank" style="background-image: url('images/covid-survey.png'); 
+            background-size: cover;      background-position: center; ">
+                <div class="project-title">
+                    Survey Template (HTML & CSS)
+                </div>
+            </a>
 
-    <section id="contact-section" class="show-section hide-section">
-     <div id="contact-labels">
-        <div id="contacts-header" class="section-header">Let's work <span class="letter-shadow">t</span>ogether</div>
-        <div id="contacts-subtitle" class="subtitle">contact me</div>
-      </div>
-      <form id="contact-form">
-          <div class="subtitle form-label">Name</div>
-        <input class="contact-input" id="contact-name" placeholder="Name" type="text" required>
-          <div class="subtitle form-label">Email</div>
-        <input class="contact-input" id="contact-email" placeholder="Email" type="email" required>
+            <a class="project-tile" href="https://github.com/azotamiota/sea_level_predictor" target="_blank" style="background-image: url('images/sea.jpg'); 
+            background-size: cover;      background-position: center; ">
+                    <div class="project-title">
+                        Sea Level Predictor (Python)
+                    </div>
+                
+            </a>
+            
+            <a class="project-tile" href="https://github.com/azotamiota/medical_data_analyzer" target="_blank" 
+            style="background-image: url('images/medical-data.jpg'); 
+            background-size: cover;
+            background-position: center; ">
+                <div class="project-title">
+                    Medical Data Analyzer (Python)
+                </div>
+            
+            </a>
+            <a class="project-tile" href="https://github.com/azotamiota/coviddeath_08-2021" target="_blank" 
+            style="background-image: url('images/coviddeath.png'); 
+            background-size: cover;
+            background-position: center; ">
+                <div class="project-title">
+                    Covid Death Statistics (Python)
+                </div>
+            
+            </a>
+            <a class="project-tile" href="https://github.com/azotamiota/london_violence_2021" target="_blank" 
+            style="background-image: url('images/violence.jpg'); 
+            background-size: cover;
+            background-position: center; ">
+                    <div class="project-title">
+                        Violence in London (Python)
+                    </div>
+                    
+            </a>
+            <a class="project-tile" href="https://github.com/azotamiota/eclipse2021K" target="_blank" 
+            style="background-image: url('images/eclipse.jpg'); 
+            background-size: cover;
+            background-position: center; ">
+                    <div class="project-title">
+                        Solar Eclipse in 2021 (Python)
+                    </div>
+                
+            </a>
+        </div>
+        <div id='secondToThird' class="page-nav" onclick="showProjects3()">More projects...</div>
+        </section>
 
-        <div class="subtitle form-label">Message</div>
-        <textarea id="contact-textarea" placeholder="Write your message..." type="text" rows="5" cols="50" required></textarea>
-        <div id="submit-button" class="subtitle form-label">Submit</div>
+        <section id="projects3" class="projects-section show-section hide-section">
+        <!-- <h2 id="project-header" class="section-header"><span class="letter-shadow">M</span>ore projects...</h2> -->
+        <div id="project-grid">
+        
+        
+            <a class="project-tile" href="https://github.com/azotamiota/min_wage_europe_2020" target="_blank" style="background-image: url('images/money.jpg'); 
+            background-size: cover;      background-position: center; ">
+                    <div class="project-title">
+                        Minimum Wages in Europe (Python)
+                    </div>
 
-      </form>
-    </section>
+            </a>
+            <a class="project-tile" href="https://github.com/azotamiota/red_list_UK" target="_blank" 
+            style="background-image: url('images/banned.jpg'); 
+            background-size: cover;
+            background-position: center; ">
+                <div class="project-title">
+                    UK Red List Countries (Python)
+                </div>
+            
+            </a>
+            
+            <a class="project-tile" href="https://azotamiota.github.io/landing_page/landing_page.html" target="_blank" style="background-image: url('images/landing.png'); 
+            background-size: cover;      background-position: center; ">
+                <div class="project-title">
+                    Landing Page Template (HTML & CSS)
+                </div>
+            
+            </a>
+            
+        </div>
+        </section>
 
+
+        <section id="contact-section" class="show-section hide-section">
+        <div id="contact-labels">
+            <div id="contacts-header" class="section-header">Let's work <span class="letter-shadow">t</span>ogether</div>
+            <div id="contacts-subtitle" class="subtitle">contact me</div>
+        </div>
+        <form id="contact-form">
+            <div class="subtitle form-label">Name</div>
+            <input class="contact-input" id="contact-name" placeholder="Name" type="text" required>
+            <div class="subtitle form-label">Email</div>
+            <input class="contact-input" id="contact-email" placeholder="Email" type="email" required>
+
+            <div class="subtitle form-label">Message</div>
+            <textarea id="contact-textarea" placeholder="Write your message..." type="text" rows="5" cols="50" required></textarea>
+            <div id="submit-button" class="subtitle form-label">Submit</div>
+
+        </form>
+        </section>
+    </article>
 
     <footer id="footer">
         <div class="footer-content">Copyright &copy; 2021-2021 Norbert Majer</div>
@@ -148,38 +238,46 @@
         }
         const welcomeSection = document.getElementById('welcome-section')
         const contactSection = document.getElementById('contact-section')
-        const projectsSection = document.getElementById('projects-section')
+        const projectsArticle = document.getElementById('projects-article')
+        const projectsSection2 = document.getElementById('projects2')
+        const projectsSection3 = document.getElementById('projects3')
+        const loadSecondProjects = document.getElementById('firstToSecond')
+        const loadThirdProjects = document.getElementById('secondToThird')
 
         function showWelcome() {
-            if (!projectsSection.classList.contains('hide-section')) {
-                console.log('#project-section does not contain .hide-section');
-                projectsSection.classList.add('hide-section');
+            if (!projectsArticle.classList.contains('hide-section')) {
+                projectsArticle.classList.add('hide-section');
             }
             if (!contactSection.classList.contains('hide-section')) {
                 contactSection.classList.add('hide-section');
             }
             welcomeSection.classList.remove('hide-section');
         }
-        function showProjects() {
-
+        function showProjectsArticle() {
             if (!welcomeSection.classList.contains('hide-section')) {
-                console.log('#welcome-section does not contain .hide-section');
                 welcomeSection.classList.add('hide-section');
             }
             if (!contactSection.classList.contains('hide-section')) {
-                console.log('this shouldnt be written here');
                 contactSection.classList.add('hide-section');
             }
-            projectsSection.classList.remove('hide-section');
+            projectsArticle.classList.remove('hide-section');
         }
         function showContact() {
             if (!welcomeSection.classList.contains('hide-section')) {
                 welcomeSection.classList.add('hide-section');
             }
-            if (!projectsSection.classList.contains('hide-section')) {
-                projectsSection.classList.add('hide-section');
+            if (!projectsArticle.classList.contains('hide-section')) {
+                projectsArticle.classList.add('hide-section');
             }
             contactSection.classList.remove('hide-section');
+        }
+        function showProjects2() {
+            loadSecondProjects.classList.add('hide-section')
+            projectsSection2.classList.remove('hide-section');
+        }
+        function showProjects3() {
+            loadThirdProjects.classList.add('hide-section');
+            projectsSection3.classList.remove('hide-section');
         }
 
       </script>
