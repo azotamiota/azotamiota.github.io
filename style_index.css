@@ -173,12 +173,13 @@ a:link {
     flex-wrap: wrap;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    grid-gap: 2vw;
+    grid-column-gap: 5vw;
+    grid-row-gap: 3vw;
 }
 .project-tile {
    position: relative;
-    height: 18vw;
-    width: 27%;
+    height: 15vw;
+    width: 15vw;
     border-radius: 15px;
 }    
 
@@ -186,16 +187,14 @@ a:link {
     position: absolute;
     display: flex;
     bottom: 0px;
-    height: 15%;
+    height: 30%;
     width: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
     background-color: #29625D;
-    font-size: 1.2vw;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    /* box-shadow: inset 0px 0px 0px 1px #000; */
 }
 .project-title::before {
     content: '</';
@@ -208,24 +207,24 @@ a:link {
     opacity: 0;
 }
 .project-tile:hover .project-title::before {
-    padding-right: 0.5vw;
+    /* padding-right: 0.1vw; */
     opacity: 1;
     transition: .5s; 
 }
 .project-tile:hover .project-title::after {
-    padding-left: 0.5vw;
     opacity: 1;
     transition: .5s; 
 }
-.project-tile:hover .project-title {
-    font-size: 1.3vw;
+.project-tile:hover {
+    transform: rotate(5deg);
     transition: 0.5s;
+    /* transform: rotate3d(-10deg); */
 }
 
 .page-nav {
     color: navajowhite;
     margin: 1rem auto 0 auto;
-    border: 1px solid navajowhite;
+    border-radius: 10px;
     padding: 1.5rem;
     margin-top: 2rem;
     background-color: #29625D;

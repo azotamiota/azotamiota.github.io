@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Mandali' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title style="font-family: monospace;">Portfolio page</title>
 </head>
 <body>
@@ -197,7 +198,7 @@
 
             <div class="subtitle form-label">Message</div>
             <textarea id="contact-textarea" placeholder="Write your message..." type="text" rows="5" cols="50" required></textarea>
-            <div id="submit-button" class="subtitle form-label">Submit</div>
+            <div id="submit-button" class="subtitle form-label" onclick="sendMessage()">Submit</div>
 
         </form>
         </section>
@@ -221,7 +222,7 @@
           </div>
           <!-- <div class="footer-content">Website designed and coded <br>by Norbert Majer</div> -->
     </footer>
-      <script>
+      <script type="text/javascript">
         const dropDownElem = document.getElementById('myDropdown')
         function toggleSkills () {
             dropDownElem.classList.contains('show') ?
@@ -293,6 +294,24 @@
             projectsSection3.classList.remove('hide-section');
         }
 
+        function sendMessage() {
+            const name = document.getElementById('contact-name').value
+            const email = document.getElementById('contact-email').value
+            const textarea = document.getElementById('contact-textarea').value
+            console.log('message sent the name was: ', name, 'email: ', email, 'textarea: ', textarea);
+            
+            Email.send({
+                SecureToken: 'c9099ecf-20f8-44fb-9138-eddd3d2bb04b',
+                To: 'azotamiota@gmail.com',
+                From: 'na@csak.sikeruljon',
+                Subject: 'New message from: this is the subject',
+                Body: 'And this is the body ',
+            })
+                .then(function (message) {
+                alert("mail sent successfully")
+                });
+            
+        }
       </script>
 </body>
 </html>
