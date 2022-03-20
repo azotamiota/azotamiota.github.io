@@ -15,7 +15,7 @@
 <body>
     <nav id="navbar">
         <a class="nav-items" onclick="showWelcome()">Home</a>
-        <a class="nav-items" onclick="showProjectsArticle()">Work</a>
+        <a class="nav-items" onclick="showProjectsArticle()">Projects</a>
         <a class="nav-items" onclick="showContact()">Contact</a>
     </nav>
 
@@ -182,7 +182,7 @@
             
         </div>
         </section>
-
+    </article>
 
         <section id="contact-section" class="show-section hide-section">
         <div id="contact-labels">
@@ -201,7 +201,7 @@
 
         </form>
         </section>
-    </article>
+    
 
     <footer id="footer">
         <div class="footer-content">Copyright &copy; 2021-2021 Norbert Majer</div>
@@ -244,12 +244,22 @@
         const loadSecondProjects = document.getElementById('firstToSecond')
         const loadThirdProjects = document.getElementById('secondToThird')
 
+        function collapseProjects() {
+            projectsSection2.classList.add('hide-section');
+            projectsSection3.classList.add('hide-section');
+            loadSecondProjects.classList.remove('hide-section');
+            loadThirdProjects.classList.remove('hide-section');
+        }
+
         function showWelcome() {
             if (!projectsArticle.classList.contains('hide-section')) {
                 projectsArticle.classList.add('hide-section');
             }
             if (!contactSection.classList.contains('hide-section')) {
                 contactSection.classList.add('hide-section');
+            }
+            if (loadThirdProjects.classList.contains('hide-section')) {
+                collapseProjects();
             }
             welcomeSection.classList.remove('hide-section');
         }
@@ -268,6 +278,9 @@
             }
             if (!projectsArticle.classList.contains('hide-section')) {
                 projectsArticle.classList.add('hide-section');
+            }
+            if (loadThirdProjects.classList.contains('hide-section')) {
+                collapseProjects();
             }
             contactSection.classList.remove('hide-section');
         }
