@@ -40,9 +40,10 @@
     </section>
 
     <article id="projects-article" class="show-section hide-section">
-        <section id="projects1" class="projects-section show-section">
+
+     <section id="projects1" class="projects-section show-section">
         <p id="project-header" class="section-header">These are some of my <span class="letter-shadow">p</span>rojects</p>
-        <div id="project-grid">
+        <div class="project-grid">
 
             <a class="project-tile" href="https://azotamiota.github.io/work-break-timer/" target="_blank" style="background-image: url('images/timer.png'); 
             background-size: cover;      background-position: center; ">
@@ -94,7 +95,7 @@
 
 
         <section id="projects2" class="projects-section show-section hide-section">
-        <div id="project-grid">
+        <div class="project-grid">
             
             <a class="project-tile" href="https://azotamiota.github.io/survey_form/covid_survey_form.html" name='https://codepen.io/azotamiota/pen/NWaxWga' target="_blank" style="background-image: url('images/covid-survey.png'); 
             background-size: cover;      background-position: center; ">
@@ -153,7 +154,7 @@
 
         <section id="projects3" class="projects-section show-section hide-section">
         <!-- <h2 id="project-header" class="section-header"><span class="letter-shadow">M</span>ore projects...</h2> -->
-        <div id="project-grid">
+        <div class="project-grid">
         
         
             <a class="project-tile" href="https://github.com/azotamiota/min_wage_europe_2020" target="_blank" style="background-image: url('images/money.jpg'); 
@@ -286,12 +287,18 @@
             contactSection.classList.remove('hide-section');
         }
         function showProjects2() {
-            loadSecondProjects.classList.add('hide-section')
-            projectsSection2.classList.remove('hide-section');
+            loadSecondProjects.classList.add('fade-out')
+            setTimeout(() => {
+                loadSecondProjects.classList.add('hide-section');
+                projectsSection2.classList.remove('hide-section');
+            }, 500) 
         }
         function showProjects3() {
             loadThirdProjects.classList.add('hide-section');
-            projectsSection3.classList.remove('hide-section');
+          setTimeout(() => {
+                loadThirdProjects.classList.add('hide-section');
+                projectsSection3.classList.remove('hide-section');
+            }, 500)
         }
 
         function sendMessage() {

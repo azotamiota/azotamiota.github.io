@@ -126,7 +126,7 @@ a:link {
     opacity: 1;
     transition: 2s;
 }
-.fade {
+.fade-out {
     opacity: 0;
     transition: 2s;
 }
@@ -168,7 +168,7 @@ a:link {
     text-align: center;
     margin-top: 1rem;
 }
-#project-grid {
+.project-grid {
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
@@ -360,7 +360,7 @@ textarea {
     h1 {
         font-size: 5.1vw;
     }
-    #project-grid {
+    .project-grid {
         grid-row-gap: 6vw;
     }
     .project-tile {
@@ -401,7 +401,7 @@ textarea {
     h1 {
         font-size: 7vw;
     }
-    #project-grid {
+    .project-grid {
         grid-row-gap: 9vw;
     }
     .project-tile {
