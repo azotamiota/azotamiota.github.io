@@ -17,7 +17,7 @@ body {
     display: flex;
 }
 .hide-section {
-    display: none;
+    display: none !important;
 }
 .section-header {
     font-size: 3.2vw;
@@ -164,9 +164,9 @@ a:link {
     min-height: calc(100vh - 50px);
 }
 #project-header {
-    padding-bottom: 0.4rem;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
 }
 .project-grid {
     display: grid;
@@ -175,6 +175,7 @@ a:link {
     grid-template-columns: auto auto auto;
     grid-column-gap: 5vw;
     grid-row-gap: 3vw;
+    margin-top: 3vw;
 }
 .project-tile {
    position: relative;

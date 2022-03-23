@@ -39,11 +39,10 @@
              alt="Welcome-section-photo">
     </section>
 
-    <article id="projects-article" class="show-section hide-section">
+    <article id="projects-article" class="projects-section show-section hide-section">
 
-     <section id="projects1" class="projects-section show-section">
         <p id="project-header" class="section-header">These are some of my <span class="letter-shadow">p</span>rojects</p>
-        <div class="project-grid">
+        <section id='projects1' class="project-grid">
 
             <a class="project-tile" href="https://azotamiota.github.io/work-break-timer/" target="_blank" style="background-image: url('images/timer.png'); 
             background-size: cover;      background-position: center; ">
@@ -89,13 +88,11 @@
                 </div>
             </a>
                     
-        </div>
-            <div id='firstToSecond' class="page-nav" onclick="showProjects2()">More projects...</div>
         </section>
+            <div id='firstToSecond' class="page-nav" onclick="showProjects2()">More projects...</div>
 
 
-        <section id="projects2" class="projects-section show-section hide-section">
-        <div class="project-grid">
+        <section id='projects2' class="project-grid hide-section">
             
             <a class="project-tile" href="https://azotamiota.github.io/survey_form/covid_survey_form.html" name='https://codepen.io/azotamiota/pen/NWaxWga' target="_blank" style="background-image: url('images/covid-survey.png'); 
             background-size: cover;      background-position: center; ">
@@ -148,13 +145,10 @@
                     </div>
                 
             </a>
-        </div>
-        <div id='secondToThird' class="page-nav" onclick="showProjects3()">More projects...</div>
         </section>
-
-        <section id="projects3" class="projects-section show-section hide-section">
-        <!-- <h2 id="project-header" class="section-header"><span class="letter-shadow">M</span>ore projects...</h2> -->
-        <div class="project-grid">
+        <div id='secondToThird' class="page-nav hide-section" onclick="showProjects3()">More projects...</div>
+    
+        <section id='projects3' class="project-grid hide-section">
         
         
             <a class="project-tile" href="https://github.com/azotamiota/min_wage_europe_2020" target="_blank" style="background-image: url('images/money.jpg'); 
@@ -182,7 +176,6 @@
             
             </a>
             
-        </div>
         </section>
     </article>
 
@@ -249,8 +242,9 @@
         function collapseProjects() {
             projectsSection2.classList.add('hide-section');
             projectsSection3.classList.add('hide-section');
+            loadSecondProjects.classList.remove('fade-out');
             loadSecondProjects.classList.remove('hide-section');
-            loadThirdProjects.classList.remove('hide-section');
+            loadThirdProjects.classList.add('hide-section');
         }
 
         function showWelcome() {
@@ -260,7 +254,7 @@
             if (!contactSection.classList.contains('hide-section')) {
                 contactSection.classList.add('hide-section');
             }
-            if (loadThirdProjects.classList.contains('hide-section')) {
+            if (loadSecondProjects.classList.contains('fade-out')) {
                 collapseProjects();
             }
             welcomeSection.classList.remove('hide-section');
@@ -272,6 +266,7 @@
             if (!contactSection.classList.contains('hide-section')) {
                 contactSection.classList.add('hide-section');
             }
+            
             projectsArticle.classList.remove('hide-section');
         }
         function showContact() {
@@ -281,7 +276,7 @@
             if (!projectsArticle.classList.contains('hide-section')) {
                 projectsArticle.classList.add('hide-section');
             }
-            if (loadThirdProjects.classList.contains('hide-section')) {
+            if (loadSecondProjects.classList.contains('fade-out')) {
                 collapseProjects();
             }
             contactSection.classList.remove('hide-section');
@@ -291,10 +286,12 @@
             setTimeout(() => {
                 loadSecondProjects.classList.add('hide-section');
                 projectsSection2.classList.remove('hide-section');
+                loadThirdProjects.classList.remove('hide-section')
+                loadThirdProjects.classList.remove('fade-out')
             }, 500) 
         }
         function showProjects3() {
-            loadThirdProjects.classList.add('hide-section');
+            loadThirdProjects.classList.add('fade-out');
           setTimeout(() => {
                 loadThirdProjects.classList.add('hide-section');
                 projectsSection3.classList.remove('hide-section');
