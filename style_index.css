@@ -216,10 +216,9 @@ a:link {
     transition: .5s; 
 }
 .project-tile:hover {
-    transform: rotate(5deg);
-    transition: 0.5s;
-    /* transform: rotate3d(-10deg); */
-}
+    transform: scale(1.2); 
+    transition: 1s;
+}   
 
 .page-nav {
     color: navajowhite;
