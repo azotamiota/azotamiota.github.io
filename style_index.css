@@ -338,7 +338,7 @@ textarea {
         min-height: calc(100vh - 40px);
     }
     #welcome-header, #welcome-subtitle {
-    margin: 0px 20vw 1rem 0;
+    margin: 0px 20% 1rem 0;
     }
     .subtitle {
         font-size: 3.1vw;
