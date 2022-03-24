@@ -157,7 +157,7 @@ a:link {
     flex-direction: column;
     width: 100vw;
 }
-.projects-section {
+#projects-article {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-position: right;
     background-attachment: fixed;
@@ -329,13 +329,14 @@ textarea {
     transform: rotateY(540deg);
 }
 
-
-
 @media only screen and (max-width: 768px){
-    #welcome-section, .projects-section {
-        background-position: center;
-        background-repeat: repeat-y;
+    #welcome-section, #projects-article {
         min-height: calc(100vh - 40px);
+    }
+    #projects-article {
+        background-position: initial;
+        background-repeat: repeat-y;
+        background-attachment: unset;
     }
     #welcome-header, #welcome-subtitle {
     margin: 0px 20% 1rem 0;
@@ -355,6 +356,7 @@ textarea {
     
     .project-grid {
         grid-row-gap: 6vw;
+        margin-top: 6vw;
         grid-template-columns: auto auto;
     }
     .project-tile {
@@ -388,6 +390,8 @@ textarea {
     }
     .project-grid {
         grid-template-columns: auto;
+        grid-row-gap: 9vw;
+        margin-top: 9vw;
     }
     .project-tile {
         width: 60vw;
@@ -409,12 +413,9 @@ textarea {
     }
     .section-header {
         font-size: 7vw;
-    }
-    .project-grid {
-        grid-row-gap: 9vw;
-    }   
+    }  
     .project-title, .page-nav, #skills-btn {
-    font-size: 4vw;
+        font-size: 4vw;
     }
     #contact-section {
         flex-direction: column;
