@@ -334,6 +334,11 @@ textarea {
 
 
 @media only screen and (max-width: 768px){
+    #welcome-section, .projects-section {
+        background-position: center;
+        background-size: cover;
+        min-height: calc(100vh - 40px);
+    }
     #welcome-header, #welcome-subtitle {
     margin: 0px 20vw 1rem 0;
     }
@@ -361,15 +366,14 @@ textarea {
     .project-title, .page-nav, #skills-btn {
         font-size: 2.1vw;
     }
-    /* .project-tile:hover .project-title {
-        font-size: 2.2vw;
-        transition: 0.5s;
-    } */
     #contact-form {
         margin-left: 3vw;
     }
     .contact-input, textarea {
         width: 33vw;
+    }
+    nav, #footer{
+        height: 40px;
     }
     .footer-content {
         font-size: 2vw;
@@ -377,9 +381,6 @@ textarea {
 }
 
 @media only screen and (max-width: 425px){
-    #welcome-section {
-        min-height: calc(100vh - 40px);
-    }
     .letter-shadow {
         text-shadow: -2px 2px red;
     }
@@ -399,7 +400,6 @@ textarea {
     }
     nav, #footer{
         justify-content: space-evenly;
-        height: 40px;
     }
     .nav-items {
         right: 0;
@@ -415,8 +415,20 @@ textarea {
     .project-grid {
         grid-row-gap: 9vw;
     }   
-   .project-title, .page-nav, #skills-btn {
+    .project-title, .page-nav, #skills-btn {
     font-size: 4vw;
+    }
+    #contact-section {
+        flex-direction: column;
+    }
+    #contact-labels {
+        margin-top: 20px;
+    }
+    #contacts-subtitle {
+        text-align: center;
+    }
+    .contact-input, textarea {
+        width: 80vw;
     }
     .footer-content {
         font-size: 3vw;
