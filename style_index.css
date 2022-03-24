@@ -27,7 +27,7 @@ body {
 }
 #welcome-header, #welcome-subtitle {
     text-align: end;
-    margin: 0px 20rem 1rem 0;
+    margin: 0px 20vw 1rem 0;
 }
 .letter-shadow {
     text-shadow: -5px 2px red;
@@ -166,7 +166,7 @@ a:link {
 }
 #project-header {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 40px;
     margin-bottom: 0;
 }
 .project-grid {
@@ -231,6 +231,7 @@ a:link {
     margin-top: 2rem;
     background-color: #29625D;
     letter-spacing: 2px;
+    font-size: 1vw;
 }
 .page-nav:hover {
     background-color: black;
@@ -262,6 +263,7 @@ a:link {
 }
 #contact-form {
     margin-left: 8vw;
+    margin-top: 20px;
 }
 #textarea-form {
     margin-left: 1vw;
@@ -325,29 +327,12 @@ textarea {
     transform: rotateY(540deg);
 }
 
-/* @media only screen and (max-width: 1024px){
-    .subtitle {
-        font-size: 3vw;
-    }
-    .nav-items {
-        font-size: 2.5vw;
-    }
-    .nav-items:hover {
-        font-size: 2.7vw;
-    }
-    .section-header {
-        font-size: 5vw;
-    }
-    h1 {
-        font-size: 5vw;
-    }
-    .contacts-tile {
-        font-size: 2vw;
-    }
-}
 
 
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 768px){
+    #welcome-header, #welcome-subtitle {
+    margin: 0px 20vw 1rem 0;
+    }
     .subtitle {
         font-size: 3.1vw;
     }
@@ -360,25 +345,27 @@ textarea {
     .section-header {
         font-size: 5.1vw;
     }
-    h1 {
-        font-size: 5.1vw;
-    }
+    
     .project-grid {
         grid-row-gap: 6vw;
+        grid-template-columns: auto auto;
     }
     .project-tile {
-        width: 42%;
-        height: 40vw;
+        width: 30vw;
+        height: 30vw;
     }
-    .project-title {
+    .project-title, .page-nav, #skills-btn {
         font-size: 2.1vw;
     }
     .project-tile:hover .project-title {
         font-size: 2.2vw;
         transition: 0.5s;
     }
-    .next {
-        font-size: 2.1vw;
+    #contact-form {
+        margin-left: 3vw;
+    }
+    .contact-input, textarea {
+        width: 33vw;
     }
     .contacts-tile {
         font-size: 2.5vw;
@@ -387,7 +374,7 @@ textarea {
         font-size: 2vw;
     }
 }
-
+/*
 @media only screen and (max-width: 430px){
     .subtitle {
         font-size: 5vw;
