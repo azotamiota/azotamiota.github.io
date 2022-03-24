@@ -434,3 +434,57 @@ textarea {
     }
 
 }
+
+@supports (-webkit-touch-callout: none) {
+  .letter-shadow {
+        text-shadow: -2px 2px red;
+    }
+    #skills-btn {
+        padding: 1rem 1rem;
+        top: 50px;
+    }
+    .project-grid {
+        grid-template-columns: auto;
+        grid-row-gap: 9vw;
+        margin-top: 9vw;
+    }
+    .project-tile {
+        width: 60vw;
+        height: 60vw;
+    }
+    .subtitle {
+        font-size: 5vw;
+    }
+    nav, #footer{
+        justify-content: space-evenly;
+    }
+    .nav-items {
+        right: 0;
+        font-size: 4vw;
+        width: 20%;
+    }
+    .nav-items:hover {
+        font-size: 4.1vw;
+    }
+    .section-header {
+        font-size: 7vw;
+    }  
+    .project-title, .page-nav, #skills-btn {
+        font-size: 4vw;
+    }
+    #contact-section {
+        flex-direction: column;
+    }
+    #contact-labels {
+        margin-top: 20px;
+    }
+    #contacts-subtitle {
+        text-align: center;
+    }
+    .contact-input, textarea {
+        width: 80vw;
+    }
+    .footer-content {
+        font-size: 3vw;
+    }
+}
