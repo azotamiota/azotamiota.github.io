@@ -25,7 +25,11 @@ body {
     color: navajowhite;
     letter-spacing: -2px;
 }
-#welcome-header, #welcome-subtitle {
+#welcome-header {
+    text-align: end;
+    margin: 30px 20vw 1rem 0;
+}
+#welcome-subtitle {
     text-align: end;
     margin: 0px 20vw 1rem 0;
 }
@@ -108,7 +112,7 @@ a:link {
     border: 0.1px solid navajowhite;
     border-radius: 5px;
     left: 3vw;
-    top: 20vh;
+    top: 80px;
 }
 .dropdown-content {
     display: grid;
@@ -367,17 +371,30 @@ textarea {
     .contact-input, textarea {
         width: 33vw;
     }
-    .contacts-tile {
-        font-size: 2.5vw;
-    }
     .footer-content {
         font-size: 2vw;
     }
 }
-/*
-@media only screen and (max-width: 430px){
+
+@media only screen and (max-width: 425px){
+    .letter-shadow {
+    text-shadow: -2px 2px red;
+    }
+    #skills-btn {
+        padding: 1rem 1rem;
+    }
+    .project-grid {
+        grid-template-columns: auto;
+    }
+    .project-tile {
+        width: 60vw;
+        height: 60vw;
+    }
     .subtitle {
         font-size: 5vw;
+    }
+    nav {
+        justify-content: space-evenly;
     }
     .nav-items {
         font-size: 4vw;
@@ -386,9 +403,6 @@ textarea {
         font-size: 4.1vw;
     }
     .section-header {
-        font-size: 7vw;
-    }
-    h1 {
         font-size: 7vw;
     }
     .project-grid {
@@ -405,38 +419,8 @@ textarea {
         font-size: 4.1vw;
         transition: 0.5s;
     }
-    .next {
-        font-size: 4vw;
-    }
-    .contacts-tile {
-        font-size: 4vw;
-    }
     .footer-content {
-        font-size: 3.8vw;
+        font-size: 3vw;
     }
-}
 
-@media only screen and (max-width: 350px){
-    .project-title {
-        font-size: 3vw;
-    }
-    .project-tile:hover .project-title {
-        font-size: 3.1vw;
-        transition: 0.5s;
-    }
-    .next {
-        font-size: 3vw;
-    }
-    .footer-content {
-        font-size: 3vw;
-    }
-    .nav-items {
-        font-size: 3.2vw;
-    }
-    .nav-items:hover {
-        font-size: 3.3vw;
-    }
-    .contacts-tile {
-        font-size: 5vw;
-    }
-} */
+}
