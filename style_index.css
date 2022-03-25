@@ -25,14 +25,6 @@ body {
     color: navajowhite;
     letter-spacing: -2px;
 }
-#welcome-header {
-    text-align: end;
-    margin: 30px 20vw 1rem 0;
-}
-#welcome-subtitle {
-    text-align: end;
-    margin: 0px 20vw 1rem 0;
-}
 .letter-shadow {
     text-shadow: -5px 2px red;
 }
@@ -95,9 +87,10 @@ a:link {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-right: 3vw;
     width: 100vw;
     min-height: calc(100vh - 50px);
 }
@@ -146,9 +139,14 @@ a:link {
     padding-right: 1rem;
     
 }
+#introduction {
+    text-align: end;
+    margin-right: 5vw;
+}
 #welcome-photo {
-    position: absolute;
-    right: 6vw;
+    float: right;
+    /* position: absolute;
+    right: 6vw; */
     width: 11vw;
     height: auto;
     border-radius: 50%;
@@ -338,9 +336,10 @@ textarea {
         background-repeat: repeat-y;
         background-attachment: unset;
     }
-    #welcome-header, #welcome-subtitle {
+    /* #introduction {
     margin: 0px 70px 1rem 0;
-    }
+
+    } */
     .subtitle {
         font-size: 3.1vw;
     }
@@ -435,56 +434,3 @@ textarea {
 
 }
 
-@supports (-webkit-touch-callout: none) {
-  .letter-shadow {
-        text-shadow: -2px 2px red;
-    }
-    #skills-btn {
-        padding: 1rem 1rem;
-        top: 50px;
-    }
-    .project-grid {
-        grid-template-columns: auto;
-        grid-row-gap: 9vw;
-        margin-top: 9vw;
-    }
-    .project-tile {
-        width: 60vw;
-        height: 60vw;
-    }
-    .subtitle {
-        font-size: 5vw;
-    }
-    nav, #footer{
-        justify-content: space-evenly;
-    }
-    .nav-items {
-        right: 0;
-        font-size: 4vw;
-        width: 20%;
-    }
-    .nav-items:hover {
-        font-size: 4.1vw;
-    }
-    .section-header {
-        font-size: 7vw;
-    }  
-    .project-title, .page-nav, #skills-btn {
-        font-size: 4vw;
-    }
-    #contact-section {
-        flex-direction: column;
-    }
-    #contact-labels {
-        margin-top: 20px;
-    }
-    #contacts-subtitle {
-        text-align: center;
-    }
-    .contact-input, textarea {
-        width: 80vw;
-    }
-    .footer-content {
-        font-size: 3vw;
-    }
-}
