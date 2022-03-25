@@ -15,6 +15,7 @@ body {
 }
 .show-section {
     display: flex;
+    display: -webkit-flex;
 }
 .hide-section {
     display: none !important;
@@ -88,7 +89,7 @@ a:link {
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: row;
-    justify-content: end;
+    -webkit-justify-content: flex-end;
     align-items: center;
     padding-right: 3vw;
     width: 100vw;
@@ -104,7 +105,7 @@ a:link {
     border: 0.1px solid navajowhite;
     border-radius: 5px;
     left: 3vw;
-    top: 80px;
+    top: 70px;
 }
 .dropdown-content {
     display: grid;
@@ -383,7 +384,6 @@ textarea {
     }
     #skills-btn {
         padding: 1rem 1rem;
-        top: 50px;
     }
     .project-grid {
         grid-template-columns: auto;
