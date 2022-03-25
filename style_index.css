@@ -284,7 +284,9 @@ textarea {
     height: 115px;
 }
 #submit-button {
+    display: block;
     border: 1px solid navajowhite;
+    background-color: black;
     width: fit-content;
     padding: 15px;
     cursor: pointer;
@@ -384,6 +386,7 @@ textarea {
     }
     .section-header {
         letter-spacing: -1px;
+        text-align: center;
     }
     #skills-btn {
         padding: 1rem 1rem;
