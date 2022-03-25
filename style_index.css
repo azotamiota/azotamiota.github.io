@@ -382,6 +382,9 @@ textarea {
     .letter-shadow {
         text-shadow: -2px 2px red;
     }
+    .section-header {
+        letter-spacing: -1px;
+    }
     #skills-btn {
         padding: 1rem 1rem;
     }
