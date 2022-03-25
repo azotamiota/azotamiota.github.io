@@ -329,7 +329,8 @@ textarea {
 
 @media only screen and (max-width: 768px){
     #welcome-section, #projects-article {
-        min-height: calc(100vh - 40px);
+        min-height: calc(100vh - 50px);
+        background-position: center;
     }
     #projects-article {
         background-position: initial;
@@ -371,9 +372,6 @@ textarea {
     .contact-input, textarea {
         width: 33vw;
     }
-    nav, #footer{
-        height: 40px;
-    }
     .footer-content {
         font-size: 2vw;
     }
@@ -401,6 +399,15 @@ textarea {
     }
     nav, #footer{
         justify-content: space-evenly;
+    }
+    #footer {
+        flex-direction: column-reverse;
+    }
+    #social-media {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 13vw 0 13vw;
     }
     .nav-items {
         right: 0;
