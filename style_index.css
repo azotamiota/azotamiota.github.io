@@ -399,14 +399,13 @@ textarea {
     nav, #footer{
         justify-content: space-evenly;
     }
-    #footer {
-        flex-direction: column-reverse;
-    }
+    /* #footer {
+        flex-direction: row;
+    } */
     #social-media {
         width: 100vw;
         display: flex;
         justify-content: space-evenly;
-        padding: 0 13vw 0 13vw;
     }
     .nav-items {
         right: 0;
