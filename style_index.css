@@ -146,8 +146,6 @@ a:link {
 }
 #welcome-photo {
     float: right;
-    /* position: absolute;
-    right: 6vw; */
     width: 11vw;
     height: auto;
     border-radius: 50%;
@@ -324,7 +322,6 @@ textarea {
     align-items: center;
 }
 .contact-link:hover .fa-brands{
-    /* font-size: 1.6vw; */
     color: black;
     transition: 3s;
     transform: rotateY(540deg);
@@ -340,10 +337,6 @@ textarea {
         background-repeat: repeat-y;
         background-attachment: unset;
     }
-    /* #introduction {
-    margin: 0px 70px 1rem 0;
-
-    } */
     .subtitle {
         font-size: 3.1vw;
     }
