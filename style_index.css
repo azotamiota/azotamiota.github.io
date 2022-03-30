@@ -21,7 +21,7 @@ body {
     display: none !important;
 }
 .section-header {
-    font-size: 3.2vw;
+    font-size: 6vw;
     font-weight: bold;
     color: navajowhite;
     letter-spacing: -2px;
@@ -44,7 +44,7 @@ nav {
   height: 50px;
   top: 0px;
   border-bottom: 2px solid navajowhite;
-  z-index: 9999;
+  z-index: 999;
 }
 .blank {
   background-color: #A37A65;
@@ -102,7 +102,7 @@ a:link {
     border-radius: 5px;
     left: 3vw;
     top: 70px;
-    z-index: 1;
+    z-index: 11;
 }
 .dropdown-content {
     display: grid;
@@ -111,7 +111,7 @@ a:link {
     top: 4rem;
     left: 0rem;
     opacity: 0;
-    z-index: 1;
+    z-index: 20;
     cursor: default;
 }
 .dropbtn {
@@ -141,7 +141,7 @@ a:link {
     position: relative;
     text-align: end;
     margin-right: 5vw;
-    z-index: 1;
+    z-index: 10;
 }
 #decoration {
     position: absolute;
@@ -316,7 +316,7 @@ textarea {
     border-top: 2px solid navajowhite;
     padding: 0 1.5rem 0 1.5rem;
     height: 50px;
-    z-index: 1;
+    z-index: 5;
 }
 .profile-link {
     display: flex;
