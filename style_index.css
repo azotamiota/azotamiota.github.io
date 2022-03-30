@@ -392,6 +392,7 @@ textarea {
     .section-header {
         letter-spacing: -1px;
         text-align: center;
+        font-size: 17vw;
     }
     #skills-btn {
         padding: 1rem 1rem;
@@ -426,10 +427,7 @@ textarea {
     }
     .nav-items:hover {
         font-size: 4.1vw;
-    }
-    .section-header {
-        font-size: 7vw;
-    }  
+    } 
     .project-title, .page-nav, #skills-btn {
         font-size: 4vw;
     }
