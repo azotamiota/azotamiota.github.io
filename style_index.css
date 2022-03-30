@@ -6,11 +6,11 @@ html, body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     background-color: white;
-    overflow-x: hidden;
    
 }
 .show-section {
@@ -83,11 +83,7 @@ a:link {
     text-decoration: none;
     }
 #welcome-section {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);
-    background-position: right;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #29625D;
     flex-direction: row;
     -webkit-justify-content: flex-end;
     align-items: center;
@@ -102,10 +98,11 @@ a:link {
     letter-spacing: 2px;
     position: absolute;
     padding: 1rem 3rem;
-    border: 0.1px solid navajowhite;
+    border: 1px solid navajowhite;
     border-radius: 5px;
     left: 3vw;
     top: 70px;
+    z-index: 1;
 }
 .dropdown-content {
     display: grid;
@@ -141,8 +138,21 @@ a:link {
     
 }
 #introduction {
+    position: relative;
     text-align: end;
     margin-right: 5vw;
+    z-index: 1;
+}
+#decoration {
+    position: absolute;
+    left: -50%;
+    width: 100%;
+    min-height: 150vh;
+    transform: skewX(-30deg);
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 #welcome-photo {
     float: right;
@@ -297,6 +307,7 @@ textarea {
     
 }
 #footer {
+    position: relative;
     display: flex;
     background-color: #A7465C;
     width: 100%;
@@ -305,6 +316,7 @@ textarea {
     border-top: 2px solid navajowhite;
     padding: 0 1.5rem 0 1.5rem;
     height: 50px;
+    z-index: 1;
 }
 .profile-link {
     display: flex;

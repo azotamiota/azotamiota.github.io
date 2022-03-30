@@ -131,35 +131,37 @@ a:hover {
 <script>
 
 randomQuoteGenerator = () => {
-const randomColGen = [Math.ceil(Math.random() * 220), Math.ceil(Math.random() * 220), Math.ceil(Math.random() * 220)]
+const randomColGen = [Math.ceil(Math.random() * 255), Math.ceil(Math.random() * 255), Math.ceil(Math.random() * 255)]
+console.log(randomColGen)
 document.body.style.transitionDuration = '2s';
 document.body.style.background = `rgb(${randomColGen})`;
 document.getElementById('new-quote').style.background = `rgb(${randomColGen})`;
 document.getElementById('new-quote').style.transitionDuration = '2s';
+document.getElementById('source-code').style.color = `rgb(${randomColGen})`
+document.getElementById('source-code').style.transitionDuration = '2s';
+document.body.style.color = `rgb(${randomColGen})`;
 
 
 
-let coloredTags = document.getElementsByClassName('text-color');
-for (elem of coloredTags) {
-    elem.style.transitionDuration = '2s';
-    elem.style.color = `rgb(${randomColGen})`;
+let iTag = document.getElementsByTagName('i');
+for (tag of iTag) {
+    tag.style.transitionDuration = '2s';
+    tag.style.color = `rgb(${randomColGen})`;
 }
-
+//document.getElementById('facebook-icon').style.color = `rgb(${randomColGen})`;
 
 
 const randomGenQ = Math.ceil(Math.random() * 325)
-const lettersOnly = /[a-zA-Z]/
+console.log(randomGenQ);
 fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de20d7514b93dd69b149289264997b49459dd/enterpreneur-quotes.json')
                 .then(response => response.json())
                 .then(data => {
+                    console.log('quote DB element:', data[randomGenQ])
                     $(document).ready(function(){
 
-                    $('#text').animate ({opacity: 0}, 2000, function () {
-                        $(this).animate({opacity: 1}, 2000);
-                        data[randomGenQ]['text'][0].match(lettersOnly) ?
-                        $('#text').html(`<span id="quote-left-ico" class="fa fa-quote-left">${'&nbsp' + '&nbsp' + data[randomGenQ]['text']}</span>`) :
-                        $('#text').html(`<span id="quote-left-ico" class="fa fa-quote-left">${'&nbsp' + '&nbsp' + data[randomGenQ]['text'].slice(1)}</span>`)}
-
+                    $('#text').animate ({opacity: 0}, 500, function () {
+                        $(this).animate({opacity: 1}, 500);
+                        $('#text').html(`<span id="quote-left-ico" class="fa fa-quote-left">${'&nbsp' + '&nbsp' + data[randomGenQ]['text']}</span>`)}
                     );
 
                     $('#author').animate ({opacity: 0}, 500, function () {
@@ -167,12 +169,16 @@ fetch('https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de2
                         $('#author').text('-' + ' ' + data[randomGenQ]['from'])}
                     );
 
-                    // console.log('quote DB lenght:', data.length) // Uncomment to check the length of database in the console
+                    // $('#quote-left-icon').animate ({opacity: 0}, 500, function () {
+                    //     $(this).animate({opacity: 1}, 500);
+                    // })
+                    console.log('quote DB lenght:', data.length)
                     })
-            
-                    document.getElementById('tweet-quote').href = 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + data[randomGenQ]['text'] + ' ' + data[randomGenQ]['from']; 
+                    document.getElementById('tweet-quote').href = 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + data[randomGenQ]['text'] + ' ' + data[randomGenQ]['from'];
+                    
                 } 
                 )
+            
             }
 randomQuoteGenerator()
 </script>
