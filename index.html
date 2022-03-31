@@ -36,7 +36,7 @@
         <div class="section-header">
         <div style="text-align: start; margin-bottom: -0.5em;">Hi,</div>
             
-        <div style="text-align: center;margin-bottom: -0.5em;">I'm</div>
+        <div style="text-align: center; margin-bottom: -0.5em;">I'm</div>
         <span class="letter-shadow">N</span><span style="display: inline">orbert</span></div> 
         <div id="welcome-subtitle" class="subtitle">Front-end Developer</div>
         
@@ -233,6 +233,7 @@
                 dropDownElem.classList.add('show'))
         }
         window.onclick = function (event) {
+            bodyOverflow();
             if (!event.target.matches('#skills-btn') && !event.target.matches('#myDropdown')) {
                 dropDownElem.classList.add('fade-out'),
                 dropDownElem.classList.remove('show')
@@ -254,6 +255,15 @@
             loadThirdProjects.classList.add('hide-section');
         }
 
+        function bodyOverflow() {
+            if (!welcomeSection.classList.contains('hide-section')) {
+                console.log('welcome section does NOT contains hide section');
+                document.body.style.overflow = 'hidden'
+            } else {
+                console.log('welcome section contains hide section');
+                document.body.style.overflow = 'auto'
+            }       
+        }
         function showWelcome() {
             if (!projectsArticle.classList.contains('hide-section')) {
                 projectsArticle.classList.add('hide-section');
