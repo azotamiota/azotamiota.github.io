@@ -403,6 +403,7 @@ textarea {
         letter-spacing: -1px;
         text-align: center;
         font-size: 17vw;
+        line-height: 90%;
     }
     hr {
         display: none;
