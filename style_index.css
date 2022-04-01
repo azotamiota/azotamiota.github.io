@@ -31,7 +31,7 @@ hr {
     display: inline-block;
     margin: 0;
     border: 0;
-    width: 50%;
+    width: 40%;
 }
 .letter-shadow {
     text-shadow: -5px 2px red;
@@ -405,7 +405,7 @@ textarea {
         font-size: 17vw;
     }
     hr {
-        width: 0;
+        width: 15%;
     }
     #skills-btn {
         padding: 1rem 1rem;
