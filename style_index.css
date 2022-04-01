@@ -405,6 +405,7 @@ textarea {
         font-size: 17vw;
     }
     hr {
+        display: none;
         width: 15%;
     }
     #skills-btn {
