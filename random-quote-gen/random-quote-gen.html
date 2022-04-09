@@ -28,18 +28,11 @@ body {
     margin-right: auto;
     width: 40vw;
 }
-#text {
+#text, #author {
    
     background-color: white;   
 }
-#author {
-    
-    background-color: white;
 
-}
-a {
-    color: white;
-}
 a {
     display: block;
 }
@@ -50,12 +43,7 @@ a:link {
 a:visited {
   text-decoration: none;
   }
- 
-a:hover {
-    text-decoration: underline;
-    color: white;
-    transition: 1s;
-}
+
 #code-box {
     top: 5px;
     background-color: white;
@@ -71,12 +59,13 @@ a:hover {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    visibility: hidden;  /* change to reveal source code box */
+    
 }
 #language-box {
     background-color: white;
-    display: flex;
+    display: none; /* change to "flex" to reveal link to Hungarian version */
     flex-direction: column;
-    color: black;
     /* font-family: 'monospace'; */
     text-align: center;
     justify-content: center;
@@ -86,6 +75,11 @@ a:hover {
     margin-top: 30px;
     border-radius: 10px;
 }
+
+ #webmaster {
+     color: white;
+     text-align: center;
+ }
 
 @media only screen and (max-width: 750px) {
       #code-box {
@@ -101,31 +95,32 @@ a:hover {
     }
 
 </style>
+   
   <div id='code-box'>
-    <a class='text-color' id='source-code' href='https://codepen.io/azotamiota/pen/ExwMLzO' target='_blank'>Click here to see source code</a>
+    <a id='source-code' href='https://codepen.io/azotamiota/pen/ExwMLzO' target='_blank'>Click here to see source code</a>
   </div>
   <div id="wrapper" class='justify-content-center align-items-center'>
     <div id='quote-box' class='container-sm rounded-3 fade-in-up'>
-        <div id="text" class='text-color row fs-3 mt-4 ms-1 me-1 mb-3 p-1 text-center'>
+        <div id="text" class=' row fs-3 mt-4 ms-1 me-1 mb-3 p-1 text-center'>
             
         </div>
-        <div id="author" class="text-color row justify-content-end p-3">
+        <div id="author" class="row justify-content-end p-3">
         </div>
         <div id='lower-row' class='d-flex flex-row bd-highlight m-4'>
             <a id="tweet-quote" class='bd-highlight m-1' href="" target='_blank'>
-                <i id='twitter-icon' class="text-color fa fa-twitter-square fa-3x" name='icon'></i>
+                <i id='twitter-icon' class="fa fa-twitter-square fa-3x" name='icon'></i>
             </a>
             <a id="facebook-quote" class='bd-highlight m-1' href='https://www.facebook.com/sharer/sharer.php?u=azotamiota.github.io/random-quote-gen/random-quote-gen.html' target='_blank'>
-                <i id='facebook-icon' class="text-color fa fa-facebook-square fa-3x" name='icon'></i>
+                <i id='facebook-icon' class="fa fa-facebook-square fa-3x" name='icon'></i>
             </a>
             <button id="new-quote" type='button' style='color: white' class='btn ms-auto bd-highlight p-2' onclick=randomQuoteGenerator()>New quote</button>
         </div>
     </div>
     <div id='language-box'>
-        <a class='text-color' id='language-change' href='https://azotamiota.github.io/random-quote-gen/random-quote-gen-hun.html'>Quotes in Hungarian</a>
+        <a id='language-change' href='https://azotamiota.github.io/random-quote-gen/random-quote-gen-hun.html'>Quotes in Hungarian</a>
       </div>
-    <div class='footer m-4'>
-              <a class='webmaster' href='https://azotamiota.github.io/'>by azotamiota</a>
+    <div id='webmaster' class='footer m-4'>Designed and Coded By<br>
+              <a id='webmaster' href='https://azotamiota.github.io/'>azotamiota</a>
    </div>
   </div>
 <script>
@@ -139,6 +134,8 @@ document.getElementById('new-quote').style.background = `rgb(${randomColGen})`;
 document.getElementById('new-quote').style.transitionDuration = '2s';
 document.getElementById('source-code').style.color = `rgb(${randomColGen})`
 document.getElementById('source-code').style.transitionDuration = '2s';
+document.getElementById('language-change').style.color = `rgb(${randomColGen})`
+document.getElementById('language-change').style.transitionDuration = '2s';
 document.body.style.color = `rgb(${randomColGen})`;
 
 
