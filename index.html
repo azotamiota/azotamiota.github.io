@@ -217,7 +217,6 @@
                     <i class="fa-brands fa-instagram fa-2xl"></i>
                     </a>
           </div>
-          <!-- <div class="footer-content">Website designed and coded <br>by Norbert Majer</div> -->
     </footer>
       <script type="text/javascript">
         const dropDownElem = document.getElementById('myDropdown')
@@ -253,10 +252,8 @@
 
         function bodyOverflow() {
             if (!welcomeSection.classList.contains('hide-section')) {
-                console.log('welcome section does NOT contains hide section');
                 document.body.style.overflow = 'hidden'
             } else {
-                console.log('welcome section contains hide section');
                 document.body.style.overflow = 'auto'
             }       
         }
@@ -310,27 +307,6 @@
                 projectsSection3.classList.remove('hide-section');
             }, 500)
         }
-
-        // Alternative method to submit contact form (need to be fixed)
-        
-        // function sendMessage() {
-        //     const name = document.getElementById('contact-name').value
-        //     const email = document.getElementById('contact-email').value
-        //     const textarea = document.getElementById('contact-textarea').value
-        //     console.log('message sent the name was: ', name, 'email: ', email, 'textarea: ', textarea);
-            
-        //     Email.send({
-        //         SecureToken: 'c9099ecf-20f8-44fb-9138-eddd3d2bb04b',
-        //         To: 'azotamiota@gmail.com',
-        //         From: 'na@csak.sikeruljon',
-        //         Subject: 'New message from: this is the subject',
-        //         Body: 'And this is the body ',
-        //     })
-        //         .then(function (message) {
-        //         alert("mail sent successfully")
-        //         });
-            
-        // }
       </script>
 </body>
 </html>
