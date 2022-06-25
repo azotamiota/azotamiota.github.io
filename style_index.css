@@ -118,6 +118,10 @@ a:link {
 }
 #skills-btn:hover {
     cursor: pointer;
+    text-decoration:wavy;
+}
+#skills-btn:hover::after {
+    background-color: darkred;
 }
 #skills-btn::after {
   content: '';
