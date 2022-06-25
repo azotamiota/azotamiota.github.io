@@ -9,7 +9,7 @@ html, body {
     overflow: hidden;
 }
 body {
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-family: 'Rajdhani', "Century Gothic", CenturyGothic, Geneva, sans-serif;
     background-color: white;
    
 }
@@ -153,7 +153,7 @@ a:link {
     top: 0;
     right: 0;
     color: white;
-    padding: 2vw;
+    padding: 1.5vw;
     background: grey;
     transition: 0.3s;
 
@@ -177,7 +177,7 @@ a:link {
 .skill-list-items {
     color: navajowhite;
     margin-left: 2vw;
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif !important;
+    font-family: 'Rajdhani', "Century Gothic", CenturyGothic, Geneva, sans-serif !important;
 }
 #introduction {
     position: relative;
