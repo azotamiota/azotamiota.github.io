@@ -28,14 +28,7 @@
             loadSecondProjects.classList.remove('hide-section');
             loadThirdProjects.classList.add('hide-section');
         }
-
-        function bodyOverflow() {
-            if (!welcomeSection.classList.contains('hide-section')) {
-                document.body.style.overflow = 'hidden'
-            } else {
-                document.body.style.overflow = 'auto'
-            }       
-        }
+        
         function showWelcome() {
             if (!projectsArticle.classList.contains('hide-section')) {
                 projectsArticle.classList.add('hide-section');
