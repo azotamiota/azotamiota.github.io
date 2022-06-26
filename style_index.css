@@ -56,7 +56,6 @@ nav {
     top: 0px;
     z-index: 999;
 }
-
 .nav-items {
     display: inline-flex;
     position: relative;
@@ -68,7 +67,6 @@ nav {
     font-size: 1.5vw;
     color: navajowhite;
     cursor: pointer;
-    /* border: 1px solid white; */
 }
 .nav-items:hover {
     color: rgb(177, 55, 55);
@@ -78,12 +76,12 @@ nav {
 .nav-items:after {
     content: '';
     position: absolute;
-    width: 30%;
+    width: 40%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 10%;
-    left: 35%;
-    right: 35%;
+    bottom: 10%; 
+    left: 30%;
+    right: 30%;
     background-color: rgb(177, 55, 55);
     transform-origin: center;
     transition: transform 0.25s ease-in;
@@ -124,8 +122,8 @@ a:link {
     justify-content: center;
     align-items: center;
     color: navajowhite;
-    width: 7vw;
-    height: 7vw;
+    width: 4.5em;
+    height: 4.5em;
     font-size: 1.3vw;
     letter-spacing: 2px;
     margin-right: 20vw;
