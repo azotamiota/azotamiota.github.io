@@ -227,11 +227,11 @@ a:link {
     background-size: cover;
     flex-direction: column;
     padding: 3vw 1vw;
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 70px);
 }
 #project-header {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 0;
 }
 .project-grid {
@@ -506,7 +506,7 @@ textarea {
         flex-direction: column;
     }
     #contact-labels {
-        margin-top: 30px;
+        margin-top: 50px;
     }
     #contacts-subtitle {
         text-align: center;
