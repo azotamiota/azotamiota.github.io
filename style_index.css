@@ -259,12 +259,20 @@ a:link {
 }    
 
 .project-name {
+   position: relative;
     margin-bottom: 30px;
     font-size: 2vw;
     letter-spacing: 2px;
+    padding: 0.1em;
     font-weight: bold;
+   background: linear-gradient(#458792 0 0) calc(100% - var(--length, 0%)) / var(--length, 0%);
+    background-repeat: no-repeat;
+    z-index: 0;
+    transition: 0.4s, background-position 0s;
 }
-   
+.project-name:hover {
+    --length: 100%;
+}  
 .descr {
     display: flex;
     flex-direction: column;
