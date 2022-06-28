@@ -241,14 +241,15 @@ a:link {
     margin-top: 50px;
 }
 .tile-descr {
-       display: flex;
+   display: flex;
     justify-self: center;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #3b2359;
     width: 60vw;
     padding: 3vw;
     margin-bottom: 40px;
+    border-radius: 20px;
 }
 .project-tile {
    position: relative;
@@ -260,6 +261,8 @@ a:link {
 .project-name {
     margin-bottom: 30px;
     font-size: 2vw;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
    
 .descr {
@@ -267,7 +270,7 @@ a:link {
     flex-direction: column;
     align-items: flex-start;
     width: 30vw;
-    color: white;
+    color: #e3ecff;
     margin: 0px auto;
 }
 .page-nav {
