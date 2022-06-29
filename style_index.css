@@ -110,7 +110,9 @@ a:link {
 #welcome-section {
     position: relative;
     display: flex;
-    background-color: rgb(225 214 243);
+    background-image: linear-gradient(rgba(225, 214, 243, 0.85), rgba(225, 214, 243, 0.85)), url(images/london-city.jpg);
+    background-size: cover;
+    background-position: bottom;
     flex-direction: row;
     -webkit-justify-content: flex-end;
     align-items: center;
