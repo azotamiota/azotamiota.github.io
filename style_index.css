@@ -110,7 +110,7 @@ a:link {
 #welcome-section {
     position: relative;
     display: flex;
-    background-color: #e1d6f3;
+    background-color: rgb(225 214 243);
     flex-direction: row;
     -webkit-justify-content: flex-end;
     align-items: center;
@@ -229,7 +229,7 @@ a:link {
 }
 #welcome-photo {
     float: right;
-    width: 11vw;
+    width: 13vw;
     height: auto;
     border-radius: 50%;
     border: 2px solid #380065;
@@ -258,8 +258,7 @@ a:link {
     margin-top: 50px;
 }
 .tile-descr {
-   display: flex;
-    justify-self: center;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #3b2359;
@@ -290,7 +289,10 @@ a:link {
 }
 .project-name:hover {
     --length: 100%;
-}  
+}
+.project-details {
+        font-size: 1.5vw;
+    }  
 .descr {
     display: flex;
     flex-direction: column;
@@ -411,13 +413,21 @@ textarea {
         min-height: calc(100vh - 70px);
         background-position: center;
     }
+    #welcome-photo {
+        width: 20vw;
+    }
     #decoration {
-        background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/magenta-blue-keyboard2.jpg);
+        background-image: linear-gradient(rgba(225, 214, 243,0.7), rgba(225,214,243,0.1)), url(images/magenta-blue-keyboard2.jpg);
+    }
+    #introduction {
+        margin-right: 0;
+    }
+    #skills-btn {
+        margin-right: 10vw;
     }
     #projects-article {
         background-position: initial;
         background-repeat: repeat-y;
-        background-attachment: unset;
     }
     .subtitle {
         font-size: 4vw;
@@ -431,19 +441,27 @@ textarea {
         right: 15%;
     }
     .section-header {
-        font-size: 11vw;
+        font-size: 8vw;
     }
     hr {
         width: 20%;
     }
-    .project-grid {
-        grid-row-gap: 6vw;
-        margin-top: 6vw;
-        grid-template-columns: auto auto;
+    .tile-descr {
+    width: 85vw;
+    }
+    .descr {
+        width: 50%;
     }
     .project-tile {
         width: 30vw;
         height: 30vw;
+    }
+    .project-name {
+        font-size: 2.5vw;
+        margin-bottom: 20px;
+    }
+    .project-details {
+        font-size: 2vw;
     }
     .project-title, .page-nav, #skills-btn {
         font-size: 2.1vw;
@@ -494,15 +512,24 @@ textarea {
         background-size: contain;
     }
     #skills-btn {
-        padding: 1rem 1rem;
+        padding: 1em 1em;
         margin-right: 0;
-        margin-top: 1em;
+        margin-top: 30px;
     }
-    .project-grid {
-        grid-template-columns: auto;
-        grid-row-gap: 9vw;
-        margin-top: 9vw;
-    }
+    .tile-descr {
+    flex-direction: column;
+}
+.descr {
+    width: 75%;
+    margin-top: 10px;
+}
+.project-name {
+    font-size: 3.5vw;
+    margin-bottom: 10px;
+}
+.project-details {
+    font-size: 3vw;
+}
     .project-tile {
         width: 60vw;
         height: 60vw;
