@@ -423,10 +423,12 @@ textarea {
         font-size: 4vw;
     }
     .nav-items {
-        font-size: 2.6vw;
+        font-size: 3vw;
     }
-    .nav-items:hover {
-        font-size: 2.7vw;
+    .nav-items:after {
+        width: 70%;
+        left: 15%;
+        right: 15%;
     }
     .section-header {
         font-size: 11vw;
@@ -518,12 +520,9 @@ textarea {
     }
     .nav-items {
         right: 0;
-        font-size: 4vw;
+        font-size: 6vw;
         width: 20%;
     }
-    .nav-items:hover {
-        font-size: 4.1vw;
-    } 
     .project-title, .page-nav, #skills-btn {
         font-size: 4vw;
     }
