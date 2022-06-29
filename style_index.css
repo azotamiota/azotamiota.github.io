@@ -92,7 +92,6 @@ nav {
 
 .nav-items:hover:after {
   transform: scaleX(1);
-  transform-origin: center;
 }
 a:link {
     text-decoration: none;
@@ -497,6 +496,7 @@ textarea {
         -webkit-justify-content: start;
         background-size: 120%;
         background-position: top;
+        background-repeat: no-repeat;
     }
     #welcome-photo {
         float:none;
