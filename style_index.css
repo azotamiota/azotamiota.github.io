@@ -411,7 +411,6 @@ textarea {
 @media only screen and (max-width: 768px){
     #welcome-section, #projects-article {
         min-height: calc(100vh - 70px);
-        background-position: center;
     }
     #welcome-photo {
         width: 20vw;
@@ -428,10 +427,6 @@ textarea {
     }
     #skills-btn::after {
         border: 6px solid #380065;
-    }
-    #projects-article {
-        background-position: initial;
-        background-repeat: repeat-y;
     }
     .subtitle {
         font-size: 4vw;
@@ -488,7 +483,7 @@ textarea {
     .section-header {
         letter-spacing: -1px;
         text-align: center;
-        font-size: 17vw;
+        font-size: 10vw;
         line-height: 90%;
     }
     hr {
@@ -497,10 +492,11 @@ textarea {
     }
     #welcome-section {
         top: 70px;
-        position: relative;
         flex-direction: column-reverse;
         align-items: center;
         -webkit-justify-content: start;
+        background-size: 120%;
+        background-position: top;
     }
     #welcome-photo {
         float:none;
