@@ -275,7 +275,7 @@ a:link {
 .project-name {
    position: relative;
     margin-bottom: 30px;
-    font-size: 2vw;
+    font-size: 1.6vw;
     letter-spacing: 2px;
     padding: 0.1em;
     font-weight: bold;
@@ -289,7 +289,7 @@ a:link {
     --length: 100%;
 }
 .project-details {
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }  
 .descr {
     display: flex;
