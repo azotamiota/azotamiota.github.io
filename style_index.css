@@ -8,8 +8,8 @@ html, body {
     padding: 0;
 }
 body {
-    font-family: 'Rajdhani', "Century Gothic", CenturyGothic, Geneva, sans-serif;
-    background-color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    /* background-color: white; */
 }
 .show-section {
     display: flex;
@@ -26,7 +26,6 @@ body {
     font-size: 6vw;
     font-weight: bold;
     color: navajowhite;
-    letter-spacing: -2px;
     line-height: 80%;
 }
 hr {
@@ -107,7 +106,7 @@ a:link {
 #welcome-section {
     position: relative;
     display: flex;
-    background-color: #29625D;
+    background-color: #422918;
     flex-direction: row;
     -webkit-justify-content: flex-end;
     align-items: center;
@@ -117,7 +116,7 @@ a:link {
     overflow: hidden;
 }
 #skills-btn {
-    background-color: rgb(41, 98, 93);
+    background-color: #422918;  /* rgb(41, 98, 93); */  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,10 +142,22 @@ a:link {
   content: '';
   width: 30px; height: 30px;
   border-radius: 100%;
-  border: 6px solid rgb(41, 98, 93);
+  border: 6px solid #422918;  /* rgb(41, 98, 93); */  
   position: absolute;
   z-index: -1;
   animation: ring 2.5s infinite;
+}
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
 }
 #curtain {
   top: 0;
@@ -206,8 +217,8 @@ a:link {
     left: -65%;
     width: 120vw;
     height: 120vw;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);
-    background-position: center;
+    background-image: url(images/dark-green1.jpg);
+    background-position: bottom;
     background-size: cover;
     border-radius: 50%;
    
@@ -221,7 +232,7 @@ a:link {
 }
 #projects-article {
     width: 100%;
-    background-image: url('images/dark-background.jpg');
+    background-image: url('images/dark-purple-blue.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,6 +276,7 @@ a:link {
     letter-spacing: 2px;
     padding: 0.1em;
     font-weight: bold;
+    color: #e3ecff !important;
    background: linear-gradient(#458792 0 0) calc(100% - var(--length, 0%)) / var(--length, 0%);
     background-repeat: no-repeat;
     z-index: 0;
@@ -278,7 +290,7 @@ a:link {
     flex-direction: column;
     align-items: flex-start;
     width: 30vw;
-    color: #e3ecff;
+    color: #e3ecff !important;
     margin: 0px auto;
 }
 .page-nav {
@@ -387,18 +399,7 @@ textarea {
     transition: 3s;
     transform: rotateY(540deg);
 }
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  100% {
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-  }
-}
+
 @media only screen and (max-width: 768px){
     #welcome-section, #projects-article {
         min-height: calc(100vh - 50px);
