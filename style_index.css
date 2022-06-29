@@ -422,6 +422,10 @@ textarea {
     }
     #skills-btn {
         margin-right: 10vw;
+        background-color: #380065;
+    }
+    #skills-btn::after {
+        border: 6px solid #380065;
     }
     #projects-article {
         background-position: initial;
