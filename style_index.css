@@ -11,8 +11,8 @@ html, body {
     padding: 0;
 }
 body {
-    font-family: 'Roboto Flex', sans-serif;
-    /* background-color: white; */
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
 }
 .show-section {
     display: flex;
@@ -42,6 +42,7 @@ hr {
 }
 .subtitle {
     font-size: 1.5vw;
+    font-weight: bold;
     color: var(--fontColor);
     letter-spacing: 1px;
     margin-top: 10px;
@@ -109,7 +110,7 @@ a:link {
 #welcome-section {
     position: relative;
     display: flex;
-    background-color: #270066;
+    background-color: #e1d6f3;
     flex-direction: row;
     -webkit-justify-content: flex-end;
     align-items: center;
@@ -207,7 +208,7 @@ a:link {
 .skill-list-items {
     color: var(--fontColor);
     margin-left: 2vw;
-    font-family: 'Rajdhani', "Century Gothic", CenturyGothic, Geneva, sans-serif !important;
+    font-family: 'Raleway', sans-serif;
 }
 #introduction {
     position: relative;
@@ -231,7 +232,9 @@ a:link {
     width: 11vw;
     height: auto;
     border-radius: 50%;
+    border: 2px solid #380065;
     z-index: 1;
+    box-shadow: -5px 5px 20px;
 }
 #projects-article {
     width: 100%;
@@ -362,7 +365,7 @@ textarea {
     padding: 15px;
     cursor: pointer;
     border-radius: 0.3rem;
-    font-family: 'Rajdhani', "Century Gothic", CenturyGothic, Geneva, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 #submit-button:hover {
     background-color: aliceblue;
