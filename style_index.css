@@ -1,3 +1,6 @@
+:root {
+    --fontColor: #d2cce7;
+}
 * {
     box-sizing: border-box;
 }
@@ -25,7 +28,7 @@ body {
 .section-header {
     font-size: 6vw;
     font-weight: bold;
-    color: navajowhite;
+    color: var(--fontColor);
     line-height: 80%;
 }
 hr {
@@ -39,7 +42,7 @@ hr {
 }
 .subtitle {
     font-size: 1.5vw;
-    color: navajowhite;
+    color: var(--fontColor);
     letter-spacing: 1px;
     margin-top: 10px;
 }
@@ -64,7 +67,7 @@ nav {
     align-items: center;
     justify-content: center;
     font-size: 1.5vw;
-    color: navajowhite;
+    color: var(--fontColor);
     cursor: pointer;
 }
 .nav-items:hover {
@@ -92,12 +95,12 @@ nav {
 }
 a:link {
     text-decoration: none;
-    color: navajowhite;
+    color: var(--fontColor);
     }
     
     a:visited {
     text-decoration: none;
-    color: navajowhite;
+    color: var(--fontColor);
     }
     
     a:active {
@@ -106,7 +109,7 @@ a:link {
 #welcome-section {
     position: relative;
     display: flex;
-    background-color: #422918;
+    background-color: #270066;
     flex-direction: row;
     -webkit-justify-content: flex-end;
     align-items: center;
@@ -116,11 +119,11 @@ a:link {
     overflow: hidden;
 }
 #skills-btn {
-    background-color: #422918;  /* rgb(41, 98, 93); */  
+    background-color: #7f65fe;  /* rgb(41, 98, 93); */  
     display: flex;
     justify-content: center;
     align-items: center;
-    color: navajowhite;
+    color: var(--fontColor);
     width: 4.5em;
     height: 4.5em;
     font-weight: bold;
@@ -142,7 +145,7 @@ a:link {
   content: '';
   width: 30px; height: 30px;
   border-radius: 100%;
-  border: 6px solid #422918;  /* rgb(41, 98, 93); */  
+  border: 6px solid #7f65fe;  /* rgb(41, 98, 93); */  
   position: absolute;
   z-index: -1;
   animation: ring 2.5s infinite;
@@ -199,10 +202,10 @@ a:link {
 }
 .icons {
     padding: 7vh;
-    color: navajowhite;
+    color: var(--fontColor);
 }
 .skill-list-items {
-    color: navajowhite;
+    color: var(--fontColor);
     margin-left: 2vw;
     font-family: 'Rajdhani', "Century Gothic", CenturyGothic, Geneva, sans-serif !important;
 }
@@ -217,7 +220,7 @@ a:link {
     left: -65%;
     width: 120vw;
     height: 120vw;
-    background-image: url(images/dark-green1.jpg);
+    background-image: url(images/magenta-blue-keyboard2.jpg);
     background-position: bottom;
     background-size: cover;
     border-radius: 50%;
@@ -232,7 +235,7 @@ a:link {
 }
 #projects-article {
     width: 100%;
-    background-image: url('images/dark-purple-blue.jpg');
+    background-image: url('images/dark-purple-blue-background.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -353,7 +356,7 @@ textarea {
 }
 #submit-button {
     display: block;
-    border: 1px solid navajowhite;
+    border: 1px solid var(--fontColor);
     background-color: black;
     width: fit-content;
     padding: 15px;
@@ -374,7 +377,7 @@ textarea {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    /* border-top: 2px solid navajowhite; */
+    /* border-top: 2px solid var(--fontColor); */
     padding: 0 1.5rem 0 1.5rem;
     height: 70px;
     z-index: 5;
@@ -386,7 +389,7 @@ textarea {
     align-items: center;
 }
 .footer-content {
-    color: navajowhite;
+    color: var(--fontColor);
     font-size: 1.1vw;
 }
 .contact-link {
@@ -402,7 +405,7 @@ textarea {
 
 @media only screen and (max-width: 768px){
     #welcome-section, #projects-article {
-        min-height: calc(100vh - 50px);
+        min-height: calc(100vh - 70px);
         background-position: center;
     }
     #projects-article {
