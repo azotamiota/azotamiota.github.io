@@ -145,6 +145,7 @@ a:link {
     background-size: cover;
     background-position: bottom;
     flex-direction: row;
+    justify-content: flex-end;
     -webkit-justify-content: flex-end;
     align-items: center;
     padding-right: 3vw;
@@ -263,6 +264,7 @@ a:link {
     background-image: linear-gradient(rgba(225, 214, 243, 0.85), rgba(225, 214, 243, 0.85)), url(images/london-city.jpg);
     background-size: cover;
     background-position: center;
+    justify-content: center;
     -webkit-justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -468,6 +470,7 @@ textarea {
 @media only screen and (max-width: 768px){
     #welcome-section {
         -webkit-justify-content: center;
+        justify-content: center;
     }
     #welcome-photo {
         width: 20vw;
@@ -577,6 +580,7 @@ textarea {
         top: 0;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: start;
         -webkit-justify-content: start;
         background-size: 120%;
         background-position: top;
