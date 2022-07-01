@@ -12,12 +12,26 @@
     <title style="font-family: monospace;">Portfolio page</title>
 </head>
 <body>
-    <nav id="navbar">
+    <nav id='nav-default' class="navbar">
         <a class="nav-items" onclick="showWelcome()">Home</a>
         <a class="nav-items" onclick="showAbout()">About</a>
         <a class="nav-items" onclick="showProjectsArticle()">Projects</a>
         <a class="nav-items" onclick="showContact()">Contact</a>
     </nav>
+    <nav id='nav-small' class="navbar">
+        <div id="container" onclick="toggleNavItems(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="small-nav-items" class="show-section hide-section">
+            <a class="nav-items" onclick="showWelcome()">Home</a>
+            <a class="nav-items" onclick="showAbout()">About</a>
+            <a class="nav-items" onclick="showProjectsArticle()">Projects</a>
+            <a class="nav-items" onclick="showContact()">Contact</a>
+        </div>
+    </nav>
+
     <section id='curtain'>
         <div id='skill-list'>
             <span class="icons fa-brands fa-2xl fa-html5"><span class="skill-list-items">HTML</span></span>

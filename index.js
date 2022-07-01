@@ -21,7 +21,8 @@
         const projectsSection3 = document.getElementById('projects3')
         const loadSecondProjects = document.getElementById('firstToSecond')
         const loadThirdProjects = document.getElementById('secondToThird')
-
+        const smallNavItems = document.getElementById("small-nav-items")
+        
         function collapseProjects() {
             projectsSection2.classList.add('hide-section');
             projectsSection3.classList.add('hide-section');
@@ -30,6 +31,10 @@
             loadThirdProjects.classList.add('hide-section');
         }
         
+        function toggleNavItems() {
+            document.getElementById('container').classList.toggle('change')
+            smallNavItems.classList.toggle('hide-section')
+        }
         function showWelcome() {
             if (!projectsArticle.classList.contains('hide-section')) {
                 projectsArticle.classList.add('hide-section');
@@ -42,6 +47,9 @@
             }
             if (loadSecondProjects.classList.contains('fade-out')) {
                 collapseProjects();
+            }
+            if (window.innerWidth <= 425) {
+                toggleNavItems()
             }
             welcomeSection.classList.remove('hide-section');
         }
@@ -58,6 +66,9 @@
             if (loadSecondProjects.classList.contains("fade-out")) {
               collapseProjects();
             }
+            if (window.innerWidth <= 425) {
+              toggleNavItems();
+            }
             aboutSection.classList.remove('hide-section')
         }
         function showProjectsArticle() {
@@ -70,6 +81,9 @@
             if (!aboutSection.classList.contains("hide-section")) {
               aboutSection.classList.add("hide-section");
             }
+             if (window.innerWidth <= 425) {
+               toggleNavItems();
+             }
             projectsArticle.classList.remove('hide-section');
         }
         function showContact() {
@@ -85,6 +99,9 @@
             if (loadSecondProjects.classList.contains('fade-out')) {
                 collapseProjects();
             }
+             if (window.innerWidth <= 425) {
+               toggleNavItems();
+             }
             contactSection.classList.remove('hide-section');
         }
         function showProjects2() {
