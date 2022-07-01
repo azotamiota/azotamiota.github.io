@@ -653,9 +653,8 @@ textarea {
     }
     #contact-section {
         flex-direction: column;
-    }
-    #contact-labels {
-        margin-top: 50px;
+        padding: 0 4em;
+        min-height: calc(100vh - 140px);
     }
     #contacts-subtitle {
         text-align: center;
