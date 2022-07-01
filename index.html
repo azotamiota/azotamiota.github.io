@@ -14,6 +14,7 @@
 <body>
     <nav id="navbar">
         <a class="nav-items" onclick="showWelcome()">Home</a>
+        <a class="nav-items" onclick="showAbout()">About</a>
         <a class="nav-items" onclick="showProjectsArticle()">Projects</a>
         <a class="nav-items" onclick="showContact()">Contact</a>
     </nav>
@@ -28,21 +29,21 @@
         <div id="close-curtain-button" onclick=closeCurtain()>X</div>
     </section>
     <section id="welcome-section" class="show-section">    
-    <div id="skills-btn" class="dropbtn" onclick="showSkillsCurtain()">Skills</div>
-    
-    <div id="decoration"></div>
-    <div id="introduction">
-        <div class="section-header" style="max-width: 20vw; color: #380065">Hi, <hr>I'm <span class="letter-shadow">N</span>orbert</div> 
-        <div id="welcome-subtitle" class="subtitle" style="color: #380065">Self-taught programmer</div>
+        <div id="skills-btn" class="dropbtn" onclick="showSkillsCurtain()">Skills</div>
         
-    </div>
-    <!-- Non-photo profile picture -->
-<!-- src="https://img.freepik.com/free-vector/cute-people-playing-laptop-cartoon-vector-icon-illustration-people-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4043.jpg?w=740" -->
-    <img id="welcome-photo" src='https://github.com/azotamiota/azotamiota.github.io/blob/main/images/Profile.jpg?raw=true'
-             alt="Welcome-section-photo">
-     
+        <div id="decoration"></div>
+            <div id="introduction">
+                <div class="section-header" style="max-width: 20vw; color: #380065">Hi, <hr>I'm <span class="letter-shadow">N</span>orbert</div> 
+                <div id="welcome-subtitle" class="subtitle" style="color: #380065">Self-taught programmer</div>
+                
+            </div>        
     </section>
-
+    <section id="about-section" class="show-section hide-section">
+        <div id="about-box"><p id="about-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam exercitationem vitae voluptates alias corrupti. Iste similique enim, accusamus eius distinctio ullam totam corrupti, illum soluta exercitationem voluptatum corporis non impedit.</p>
+            <img id="about-photo" src='https://github.com/azotamiota/azotamiota.github.io/blob/main/images/Profile.jpg?raw=true'
+                alt="Welcome-section-photo"></div>
+        
+    </section>
     <article id="projects-article" class="show-section hide-section">
 
         <p id="project-header" class="section-header">My <span class="letter-shadow">p</span>rojects</p>

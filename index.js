@@ -13,7 +13,8 @@
 
         }
        
-        const welcomeSection = document.getElementById('welcome-section')
+        const welcomeSection = document.getElementById("welcome-section");
+        const aboutSection = document.getElementById("about-section");
         const contactSection = document.getElementById('contact-section')
         const projectsArticle = document.getElementById('projects-article')
         const projectsSection2 = document.getElementById('projects2')
@@ -33,6 +34,9 @@
             if (!projectsArticle.classList.contains('hide-section')) {
                 projectsArticle.classList.add('hide-section');
             }
+            if (!aboutSection.classList.contains("hide-section")) {
+              aboutSection.classList.add("hide-section");
+            }
             if (!contactSection.classList.contains('hide-section')) {
                 contactSection.classList.add('hide-section');
             }
@@ -41,6 +45,21 @@
             }
             welcomeSection.classList.remove('hide-section');
         }
+        function showAbout() {
+            if (!welcomeSection.classList.contains("hide-section")) {
+              welcomeSection.classList.add("hide-section");
+            }
+            if (!projectsArticle.classList.contains("hide-section")) {
+              projectsArticle.classList.add("hide-section");
+            }
+            if (!contactSection.classList.contains("hide-section")) {
+              contactSection.classList.add("hide-section");
+            }
+            if (loadSecondProjects.classList.contains("fade-out")) {
+              collapseProjects();
+            }
+            aboutSection.classList.remove('hide-section')
+        }
         function showProjectsArticle() {
             if (!welcomeSection.classList.contains('hide-section')) {
                 welcomeSection.classList.add('hide-section');
@@ -48,7 +67,9 @@
             if (!contactSection.classList.contains('hide-section')) {
                 contactSection.classList.add('hide-section');
             }
-            
+            if (!aboutSection.classList.contains("hide-section")) {
+              aboutSection.classList.add("hide-section");
+            }
             projectsArticle.classList.remove('hide-section');
         }
         function showContact() {
@@ -57,6 +78,9 @@
             }
             if (!projectsArticle.classList.contains('hide-section')) {
                 projectsArticle.classList.add('hide-section');
+            }
+            if (!aboutSection.classList.contains("hide-section")) {
+              aboutSection.classList.add("hide-section");
             }
             if (loadSecondProjects.classList.contains('fade-out')) {
                 collapseProjects();
