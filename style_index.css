@@ -27,7 +27,6 @@ body {
 }
 .section-header {
     font-size: 6vw;
-    font-weight: bold;
     color: var(--fontColor);
     line-height: 80%;
 }
@@ -42,7 +41,6 @@ hr {
 }
 .subtitle {
     font-size: 1.5vw;
-    font-weight: bold;
     color: var(--fontColor);
     letter-spacing: 1px;
     margin-top: 10px;
@@ -99,7 +97,6 @@ hr {
     align-items: center;
     justify-content: center;
     font-size: 1.5vw;
-    font-weight: bold;
     color: var(--fontColor);
     cursor: pointer;
 }
@@ -161,7 +158,6 @@ a:link {
     color: var(--fontColor);
     width: 4.5em;
     height: 4.5em;
-    font-weight: bold;
     letter-spacing: 2px;
     margin-right: 20vw;
     border-radius: 50%;
@@ -339,7 +335,6 @@ a:link {
     font-size: 1.6vw;
     letter-spacing: 2px;
     padding: 0.1em;
-    font-weight: bold;
     color: #e3ecff !important;
    background: linear-gradient(#458792 0 0) calc(100% - var(--length, 0%)) / var(--length, 0%);
     background-repeat: no-repeat;
@@ -367,7 +362,6 @@ a:link {
     margin: 0 auto;
     background-color: #3b2359;
     letter-spacing: 2px;
-    font-weight: bold;
 }
 .page-nav:hover {
     background-color: black;
