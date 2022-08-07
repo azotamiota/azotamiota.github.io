@@ -538,6 +538,7 @@ textarea {
         width: 75vw;
         height: 65%;
         padding: 2em;
+        font-size: 12px;
     }
     .tile-descr {
     width: 85vw;
@@ -659,6 +660,7 @@ textarea {
     width: 85vw;
     justify-content: space-evenly;
     padding: 4vw;
+    height: 85%;
 }
 #about-photo {
     width: 30vw;
@@ -678,7 +680,7 @@ textarea {
         height: 70vw;
     }
     .subtitle {
-        font-size: 6vw;
+        font-size: 15px;
     }
     #footer{
         justify-content: space-evenly;
