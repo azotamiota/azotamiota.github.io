@@ -230,18 +230,19 @@ a:link {
 }
 #skill-list {
     display: none;
-    flex-direction: column;
+    grid-template-columns: auto auto auto auto;
+    /* flex-direction: column; */
     top: 4rem;
     left: 0rem;
     cursor: default;
 }
 .icons {
-    padding: 7vh;
+    padding: 30px;
     color: var(--fontColor);
 }
 .skill-list-items {
     color: var(--fontColor);
-    margin-left: 2vw;
+    margin-left: 1vw;
     font-family: 'Raleway', sans-serif;
 }
 #introduction {
@@ -481,6 +482,9 @@ textarea {
     #introduction {
         margin-right: 0;
     }
+    #skill-list {
+    grid-template-columns: auto auto;
+    }
     #skills-btn {
         background-color: #380065;
     }
@@ -602,6 +606,9 @@ textarea {
         height: 200vw;
         background-position: top;
         background-size: contain;
+    }
+    .icons {
+        padding: 23px;
     }
     #skills-btn {
         padding: 1em 1em;

@@ -4,7 +4,7 @@
         function showSkillsCurtain () {
             skillsCurtain.style.height = '100%'
             curtainCloseButton.style.display = 'initial'
-            skillListElem.style.display = 'flex'
+            skillListElem.style.display = 'grid'
         }
         function closeCurtain () {
             skillsCurtain.style.height = '0%'
