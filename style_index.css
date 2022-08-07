@@ -116,7 +116,7 @@ hr {
     display: inline-flex;
     position: relative;
     height: 67%;
-    width: 13%;
+    width: 10%;
     align-items: center;
     justify-content: center;
     font-size: 14px;
@@ -209,6 +209,7 @@ a:link {
   position: absolute;
   z-index: -1;
   animation: ring 2.5s infinite;
+  -webkit-animation:  ring 2.5s infinite;
 }
 @keyframes ring {
   0% {
