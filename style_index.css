@@ -150,10 +150,17 @@ a:link {
     height: calc(100vh - 70px);
     overflow: hidden;
 }
+
+#introduction-subtitle:link, #introduction-subtitle:visited, #introduction-subtitle:active, #introduction-subtitle:focus{
+    text-decoration: underline;
+    color:rgba(56, 0, 101, 1)
+}
+
 #skills-btn {
     background-color: #7f65fe;  /* rgb(41, 98, 93); */  
     display: flex;
     justify-content: center;
+    letter-spacing: 0px;
     align-items: center;
     color: var(--fontColor);
     width: 50px;
@@ -649,7 +656,7 @@ textarea {
         justify-content: space-evenly;
     }
     .project-title, .page-nav, #skills-btn {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     #contact-section {
         flex-direction: column;
