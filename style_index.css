@@ -12,8 +12,31 @@ html, body {
 }
 body {
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 20px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
 .show-section {
     display: flex;
     display: -webkit-flex;
@@ -278,25 +301,27 @@ a:link {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
     width: 70vw;
-    height: 45%;
+    height: 60%;
     background-color: #3b2359;
     border-radius: 20px;
     color: var(--fontColor);
-    padding: 4em;
+    padding: 2em 2em 2em 4em;
     box-shadow: 10px 10px 15px black;
 }
 #about-summary {
     padding-right: 6vw;
+    height: 90%;
+    overflow: auto;
 }
 #about-photo {
-    /* float: right; */
     width: 13vw;
     height: auto;
     border-radius: 50%;
-    /* border: 2px solid #380065; */
+    margin-left: 2em;
     z-index: 1;
-    /* box-shadow: -5px 5px 20px; */
 }
 #projects-article {
     width: 100%;
