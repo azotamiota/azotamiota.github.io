@@ -11,4 +11,3 @@ services:
     working_dir: /portfolio
     ports:
       - 3000:80
-    # command: bash -c "open index.html"

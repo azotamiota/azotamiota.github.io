@@ -96,7 +96,7 @@ hr {
     width: 13%;
     align-items: center;
     justify-content: center;
-    font-size: 1.5vw;
+    font-size: 14px;
     color: var(--fontColor);
     cursor: pointer;
 }
@@ -156,9 +156,8 @@ a:link {
     justify-content: center;
     align-items: center;
     color: var(--fontColor);
-    width: 4.5em;
-    height: 4.5em;
-    letter-spacing: 2px;
+    width: 50px;
+    height: 50px;
     margin-right: 20vw;
     border-radius: 50%;
     left: 30vw;
@@ -485,7 +484,6 @@ textarea {
         font-size: 4vw;
     }
     .nav-items {
-        font-size: 3vw;
         width: 17%;
     }
     .nav-items:after {
@@ -548,10 +546,10 @@ textarea {
     }
     .nav-items {
         display: block;
-    font-size: 6vw;
+    font-size: 15px;
     text-align: end;
     width: auto;
-    padding: 10vw 5vw 10vw 30vw;
+    padding: 3vw 5vw 3vw 30vw;
     background-color: rgba(56, 0, 101, 0.8);
     right: auto;
     }
