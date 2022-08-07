@@ -223,6 +223,19 @@ a:link {
     opacity: 0;
   }
 }
+
+@-webkit-keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
 #curtain {
   top: 0;
     left: 0;
