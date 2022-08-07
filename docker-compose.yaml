@@ -1,0 +1,14 @@
+version: "1"
+name: "portfolio"
+services: 
+  client:
+    container_name: portfolio-page
+    image: img-portfolio-website
+    volumes: 
+      - type: bind
+        source: ./
+        target: /portfolio
+    working_dir: /portfolio
+    ports:
+      - 3000:80
+    # command: bash -c "open index.html"
