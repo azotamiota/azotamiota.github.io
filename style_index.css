@@ -151,12 +151,7 @@ a:link {
     overflow: hidden;
 }
 
-#introduction-subtitle {
-    text-decoration: underline;
-    color:rgba(56, 0, 101, 1)
-}
-
-#introduction-subtitle:link, #introduction-subtitle:visited, #introduction-subtitle:active, #introduction-subtitle:focus{
+#introduction-subtitle, #introduction-subtitle:link, #introduction-subtitle:visited, #introduction-subtitle:active, #introduction-subtitle:focus{
     text-decoration: underline;
     color:rgba(56, 0, 101, 1)
 }
