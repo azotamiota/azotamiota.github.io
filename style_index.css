@@ -70,7 +70,7 @@ hr {
 }
 
 .navbar {
-  background-color: black;
+    background-color: black;
     display: flex;
     position: fixed;
     justify-content: flex-end;
@@ -82,7 +82,6 @@ hr {
 }
 #nav-small {
     display: none;
-    position: relative
 }
 #container {
   display: inline-block;
@@ -308,7 +307,7 @@ a:link {
     -webkit-justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 70px);
 }
 #about-box {
@@ -593,7 +592,6 @@ textarea {
     }
     #nav-small {
         display: flex;
-        width: initial;
     }
     .nav-items {
         display: block;
@@ -616,7 +614,7 @@ textarea {
     .section-header {
         letter-spacing: -1px;
         text-align: center;
-        font-size: 10vw;
+        font-size: 35px;
         line-height: 90%;
     }
     hr {
@@ -624,7 +622,7 @@ textarea {
         width: 15%;
     }
     #welcome-section {
-        top: 0;
+        top: 70px;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: start;
@@ -665,8 +663,9 @@ textarea {
     width: 75%;
     margin-top: 10px;
 }
-#about-section {
-    height: calc(100vh - 140px);
+#about-section, #contact-section {
+    height: calc(100vh - 70px);
+    margin-top: 70px;
 }
 #about-box {
     flex-direction: column-reverse;
@@ -678,9 +677,7 @@ textarea {
 #about-photo {
     width: 30vw;
 }
-#project-header {
-    margin-top: 0;
-}
+
 .project-name {
     font-size: 4vw;
     margin-bottom: 10px;
@@ -693,7 +690,7 @@ textarea {
         height: 70vw;
     }
     .subtitle {
-        font-size: 15px;
+        font-size: 20px;
     }
     #footer{
         justify-content: space-evenly;
@@ -708,7 +705,7 @@ textarea {
     }
     #contact-section {
         flex-direction: column;
-        padding: 0 4em;
+        padding: 10px 10px;
         min-height: calc(100vh - 140px);
     }
     #contacts-subtitle {
