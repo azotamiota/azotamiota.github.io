@@ -207,7 +207,7 @@ a:link {
   border: 6px solid #7f65fe;  /* rgb(41, 98, 93); */  
   position: absolute;
   z-index: -1;
-  animation: ring 2.5s infinite;
+  animation: ring 1.5s infinite;
   -webkit-animation:  webkit-ring 2.5s infinite;
   -moz-animation: moz-ring 2.5s infinite;
   -o-animation: o-ring 2.5 infinite;
@@ -219,6 +219,13 @@ a:link {
     height: 30px;
     opacity: 1;
   }
+
+  50% {
+    width: 110px;
+    height: 110px;
+    opacity: 0.5;
+  }
+
   100% {
     width: 200px;
     height: 200px;
@@ -230,8 +237,15 @@ a:link {
   0% {
     width: 30px;
     height: 30px;
-    opacity: 1;
+    opacity: 0;
   }
+
+  50% {
+    width: 110px;
+    height: 110px;
+    opacity: 0.5;
+  }
+
   100% {
     width: 200px;
     height: 200px;
