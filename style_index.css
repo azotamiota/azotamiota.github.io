@@ -240,10 +240,10 @@ a:link {
     opacity: 0;
   }
 
-  50% {
+  90% {
     width: 110px;
     height: 110px;
-    opacity: 0.5;
+    opacity: 0.1;
   }
 
   100% {
