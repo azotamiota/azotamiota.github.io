@@ -210,9 +210,9 @@ a:link {
   position: absolute;
   z-index: -1;
   animation: ring 1.5s infinite;
-  /* -webkit-animation:  webkit-ring 2.5s infinite;
+  -webkit-animation:  webkit-ring 2.5s infinite;
   -moz-animation: moz-ring 2.5s infinite;
-  -o-animation: o-ring 2.5 infinite; */
+  -o-animation: o-ring 2.5 infinite;
 }
 
 @keyframes ring {
@@ -228,18 +228,12 @@ a:link {
     opacity: 0;
   }
 }
-/* 
+
 @-webkit-keyframes webkit-ring {
   0% {
     width: 30px;
     height: 30px;
     opacity: 0;
-  }
-
-  90% {
-    width: 190px;
-    height: 190px;
-    opacity: 0.1;
   }
 
   100% {
@@ -273,7 +267,7 @@ a:link {
     height: 200px;
     opacity: 0;
   }
-} */
+}
 
 #curtain {
   top: 0;
