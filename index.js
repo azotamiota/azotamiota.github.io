@@ -18,17 +18,13 @@
         const contactSection = document.getElementById('contact-section')
         const projectsArticle = document.getElementById('projects-article')
         const projectsSection2 = document.getElementById('projects2')
-        const projectsSection3 = document.getElementById('projects3')
         const loadSecondProjects = document.getElementById('firstToSecond')
-        const loadThirdProjects = document.getElementById('secondToThird')
         const smallNavItems = document.getElementById("small-nav-items")
         
         function collapseProjects() {
             projectsSection2.classList.add('hide-section');
-            projectsSection3.classList.add('hide-section');
             loadSecondProjects.classList.remove('fade-out');
             loadSecondProjects.classList.remove('hide-section');
-            loadThirdProjects.classList.add('hide-section');
         }
         
         function toggleNavItems() {
@@ -109,14 +105,5 @@
             setTimeout(() => {
                 loadSecondProjects.classList.add('hide-section');
                 projectsSection2.classList.remove('hide-section');
-                loadThirdProjects.classList.remove('hide-section')
-                loadThirdProjects.classList.remove('fade-out')
             }, 500) 
-        }
-        function showProjects3() {
-            loadThirdProjects.classList.add('fade-out');
-          setTimeout(() => {
-                loadThirdProjects.classList.add('hide-section');
-                projectsSection3.classList.remove('hide-section');
-            }, 500)
         }
