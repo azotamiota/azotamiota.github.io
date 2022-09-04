@@ -210,8 +210,8 @@ a:link {
   position: absolute;
   z-index: -1;
   animation: ring 1.5s infinite;
-  /* -webkit-animation:  webkit-ring 2.5s infinite;
-  -moz-animation: moz-ring 2.5s infinite;
+  /* -webkit-animation:  webkit-ring 2.5s infinite; */
+  /* -moz-animation: moz-ring 2.5s infinite;
   -o-animation: o-ring 2.5 infinite; */
 }
 
@@ -241,8 +241,8 @@ a:link {
     height: 200px;
     opacity: 0;
   }
-}
-
+} */
+/* 
 @-moz-keyframes moz-ring {
   0% {
     width: 30px;
@@ -301,7 +301,6 @@ a:link {
 #skill-list {
     display: none;
     grid-template-columns: auto auto auto auto;
-    /* flex-direction: column; */
     top: 4rem;
     left: 0rem;
     cursor: default;
@@ -458,6 +457,29 @@ a:link {
     transition: 0.5s;
     cursor: pointer;
 }
+
+.github-link {
+    position: relative;
+    top: 0;
+    width: 70px;
+    height: 30px;
+    margin: 15px auto 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: lightgray;
+    color: black !important;
+    font-size: 13px;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.github-link:hover {
+    background-color: #458792;
+    color: #e3ecff !important;
+    top: -2px;
+}
+
 #contact-section {
     background:
         linear-gradient(
