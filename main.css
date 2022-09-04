@@ -459,8 +459,6 @@ a:link {
 }
 
 .github-link {
-    position: relative;
-    top: 0;
     width: 70px;
     height: 30px;
     margin: 15px auto 0 auto;
@@ -477,7 +475,6 @@ a:link {
 .github-link:hover {
     background-color: #458792;
     color: #e3ecff !important;
-    top: -2px;
 }
 
 #contact-section {
