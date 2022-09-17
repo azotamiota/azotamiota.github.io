@@ -284,6 +284,13 @@ a:link {
     transition: 1s;
     z-index: 999;
 }
+
+#flask-icon {
+    width:20px;
+    height:auto;
+    background-image: url('./images/flask.png');
+}
+
 #close-curtain-button {
     display: none;
     position: fixed;
