@@ -337,10 +337,10 @@ a:link {
 }
 #decoration {
     position: absolute;
-    left: -65%;
-    width: 120vw;
-    height: 120vw;
-    background-image: url(images/magenta-blue-keyboard2.jpg);
+    left: -10%;
+    width: 70vw;
+    height: 70vw;
+    background-image: url(images/programming.svg);
     background-position: bottom;
     background-size: cover;
     border-radius: 50%;
@@ -594,7 +594,7 @@ textarea {
         width: 20vw;
     }
     #decoration {
-        background-image: linear-gradient(rgba(225, 214, 243,0.7), rgba(225,214,243,0.1)), url(images/magenta-blue-keyboard2.jpg);
+        background-image: linear-gradient(rgba(225, 214, 243,0.7), rgba(225,214,243,0.1)), url(images/programming.svg);
     }
     #introduction {
         margin-right: 0;
