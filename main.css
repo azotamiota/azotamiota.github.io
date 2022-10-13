@@ -308,6 +308,7 @@ a:link {
 #skill-list {
     display: none;
     grid-template-columns: auto auto auto auto;
+    gap: 2rem 2rem;
     top: 4rem;
     left: 0rem;
     cursor: default;
@@ -317,10 +318,17 @@ a:link {
     color: var(--fontColor);
 }
 .skill-list-items {
+    display: flex;
+    align-items: center;
     color: var(--fontColor);
     margin-left: 1vw;
     font-family: 'Raleway', sans-serif;
 }
+
+.curtain-icon {
+    margin-right: 10px;
+}
+
 #introduction {
     position: relative;
     text-align: end;
