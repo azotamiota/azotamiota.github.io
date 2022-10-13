@@ -351,7 +351,7 @@ a:link {
     height: calc(100vh - 70px);
 }
 
-#defer-link {
+.defer-link {
     text-decoration: underline;
     background: linear-gradient(#458792 0 0) calc(100% - var(--length, 0%)) / var(--length, 0%);
     background-repeat: no-repeat;
@@ -436,7 +436,7 @@ a:link {
     z-index: 0;
     transition: 0.4s, background-position 0s;
 }
-.project-name:hover, #defer-link:hover {
+.project-name:hover, .defer-link:hover {
     --length: 100%;
     cursor: pointer;
 }
