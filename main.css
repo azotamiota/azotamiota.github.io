@@ -594,7 +594,7 @@ textarea {
         width: 20vw;
     }
     #decoration {
-        background-image: linear-gradient(rgba(225, 214, 243,0.7), rgba(225,214,243,0.1)), url(images/programming.svg);
+        background-image: linear-gradient(rgba(225, 214, 243, 0.8), rgba(225, 214, 243, 0.8)), url(images/programming.svg);
     }
     #introduction {
         margin-right: 0;
@@ -704,10 +704,11 @@ textarea {
     #welcome-section {
         top: 70px;
         flex-direction: column-reverse;
+        background-image: linear-gradient(rgba(225, 214, 243, 0.85), rgba(225, 214, 243, 0.85)), url(images/programming.svg);
         align-items: center;
         justify-content: start;
         -webkit-justify-content: start;
-        background-size: 120%;
+        background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
         height: calc(100vh - 140px);
@@ -718,12 +719,13 @@ textarea {
         margin: 20px 0 20px 0;
     }
     #decoration {
-        left: auto;
+        display: none;
+        /* left: auto;
         top: 40vh;
         width: 200vw;
         height: 200vw;
         background-position: top;
-        background-size: contain;
+        background-size: contain; */
     }
     .icons {
         padding: 23px;
