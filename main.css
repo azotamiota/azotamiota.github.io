@@ -334,6 +334,9 @@ a:link {
     text-align: end;
     margin-right: 10vw;
     z-index: 10;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 #decoration {
     position: absolute;
