@@ -347,7 +347,8 @@ a:link {
     left: -10%;
     width: 70vw;
     height: 70vw;
-    background-image: url(images/programming.svg);
+    /* background-image: url(images/magical_cloud_engineer.jpeg); */
+    background-image: url(images/magical_cloud_engineer.jpeg);
     background-position: bottom;
     background-size: cover;
     border-radius: 50%;
@@ -600,7 +601,7 @@ textarea {
         width: 20vw;
     }
     #decoration {
-        background-image: linear-gradient(rgba(225, 214, 243, 0.8), rgba(225, 214, 243, 0.8)), url(images/programming.svg);
+        background-image: linear-gradient(rgba(225, 214, 243, 0.8), rgba(225, 214, 243, 0.8)), url(images/magical_cloud_engineer.jpeg);
     }
     #introduction {
         margin-right: 0;
@@ -710,7 +711,7 @@ textarea {
     #welcome-section {
         top: 70px;
         flex-direction: column-reverse;
-        background-image: linear-gradient(rgba(225, 214, 243, 0.85), rgba(225, 214, 243, 0.85)), url(images/programming.svg);
+        background-image: linear-gradient(rgba(225, 214, 243, 0.85), rgba(225, 214, 243, 0.85)), url(images/magical_cloud_engineer.jpeg);
         align-items: center;
         justify-content: start;
         -webkit-justify-content: start;
